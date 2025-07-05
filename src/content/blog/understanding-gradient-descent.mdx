@@ -1,0 +1,152 @@
+---
+title: Understanding Gradient Descent
+description: An introduction to gradient descent and its applications in machine learning and deep learning.
+image: https://assets.chanhdai.com/images/blog/awesome-terminal.webp
+createdAt: 2025-07-06
+updatedAt: 2025-07-06
+---
+
+# 1. Introduction
+
+**Gradient descent (GD)** is an iterative first-order optimisation algorithm, used to find a local minimum/maximum of a given function. This method is commonly used in _machine learning (ML)_ and _deep learning (DL)_ to minimise a cost/loss function.
+
+This method was proposed long before the era of modern computers by **Augustin-Louis Cauchy** in 1847. Since that time, significant development in computer science and numerical methods has led to numerous improved versions of Gradient Descent. However, in this article we're going to use the basic/vanilla version.
+
+# 2. What is a Cost/Loss Function?
+
+In the context of machine learning, a cost function (also known as a loss function or objective function) is a mathematical formula used to measure the performance of a machine learning model.
+
+The value of the cost function quantifies how well the model’s predictions align with the actual data. The primary goal in training a machine learning model is to minimize this cost function by adjusting the model’s parameters (like weights in a neural network).
+
+> _Example: Below shows the hypothesis and the cost function for a linear equation in two variables._  
+> _Source: Coursera_
+
+# 3. Requirements of a Cost Function
+
+## Differentiability
+
+A cost function should ideally be **differentiable**. This means it has a derivative at each point in its domain. Gradient descent relies on computing these derivatives.
+
+> Typical **non-differentiable** functions include steps, cusps, or discontinuities.
+
+## Convexity
+
+In some ML scenarios (e.g., linear/logistic regression), it's beneficial if the cost function is **convex**. A convex cost function guarantees convergence to a **global minimum**, rather than getting trapped in **local minima**.
+
+# 4. What Does Gradient Mean?
+
+A **gradient** refers to a vector that points in the direction of the greatest rate of increase of a function.
+
+### One-Dimensional: The Derivative
+
+The derivative of a function measures how its output changes with respect to its input.
+
+```ts
+// Example: f(x) = x²
+// Derivative: f'(x) = 2x
+// At x = 3, f'(3) = 6
+```
+
+### Multiple Dimensions: The Gradient
+
+The **gradient** generalizes the derivative to multiple dimensions. It is a vector of partial derivatives.
+
+> ![Gradient Illustration](image-url)  
+> _Source: Gradient Descent Algorithm: A Quick Guide (analyticsvidhya.com)_
+
+# 5. What Does Gradient Descent Mean?
+
+Gradient Descent minimizes the cost function by moving in the direction of the **negative gradient**.
+
+### Update Rule:
+
+```ts
+θ = θ - η * ∇f(θ)
+```
+
+- `θ` – parameters
+- `η` – learning rate
+- `∇f(θ)` – gradient at current parameters
+
+### Stopping Criteria:
+
+- Fixed number of iterations
+- Minimal change in objective function
+- Gradient magnitude below threshold
+
+> Contour plots help visualize this in 2D, where concentric rings indicate equal values of the cost function.
+
+# 6. Types of Gradient Descent Algorithm
+
+## Batch Gradient Descent
+
+- Computes the gradient over the entire dataset
+- Accurate but slow for large datasets
+
+## Stochastic Gradient Descent (SGD)
+
+- Uses one sample at a time
+- Fast but noisy
+
+## Mini-batch Gradient Descent
+
+- A compromise between batch and SGD
+- Commonly used in practice
+
+# 7. Alpha — The Learning Rate
+
+The learning rate `α` controls the step size in each update.
+
+```ts
+θ_new = θ_old - α * ∇f(θ_old)
+```
+
+### Effects:
+
+- **Too Large**: May overshoot or diverge
+- **Too Small**: Very slow convergence
+- **Ideal**: Balanced and efficient
+
+> Often selected via empirical testing, grid search, or learning rate schedules.
+
+# 8. Challenges of Gradient Descent Algorithm
+
+## 1. Learning Rate Sensitivity
+
+Choosing the correct learning rate is critical for stable and efficient convergence.
+
+## 2. Local Minima & Saddle Points
+
+- **Non-convex functions** can trap gradient descent in local minima.
+- **Saddle points** are flat points that are neither minima nor maxima.
+
+## 3. Initial Point Dependence
+
+Different starting points can lead to different outcomes or speeds of convergence.
+
+## 4. High Dimensionality
+
+- **Curse of dimensionality**: Parameter space grows exponentially
+- **Gradient computation** becomes more expensive
+
+## 5. Plateaus and Flat Regions
+
+Very small gradients slow down convergence in flat areas of the loss surface.
+
+## 6. Noisy Gradients & Non-Smooth Objectives
+
+- SGD introduces variance in updates
+- Sharp points in functions make gradients undefined
+
+## 7. Vanishing & Exploding Gradients
+
+- Common in deep neural networks
+- Makes training unstable or stagnant
+
+---
+
+> Gradient descent is the cornerstone of most machine learning algorithms, but understanding its behavior, limitations, and improvements is essential for applying it effectively.
+
+```
+
+```
