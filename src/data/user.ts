@@ -1,44 +1,59 @@
 export const USER = {
-  firstName: "Chánh Đại",
-  lastName: "Nguyễn",
-  displayName: "Chánh Đại",
-  username: "ncdai",
-  gender: "male",
-  bio: "Creating with code, driven by passion.",
+  firstName: "Ishita",
+  lastName: "Pal",
+  displayName: "Ishita",
+  username: "butterfly-ish",
+  gender: "woman",
+  bio: "Driven to make AI safe, reliable, and accessible to all.",
   flipSentences: [
-    "Software Developer",
-    "UI/UX Designer",
+    "AI Researcher",
+    "AI Safety Engineer",
     "Open Source Contributor",
   ],
-  address: "Thanh My Tay Ward, Ho Chi Minh City, Viet Nam",
-  phoneNumber: "Kzg0Nzc3ODg4MTQ4", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
-  email: "ZGFpQGNoYW5oZGFpLmNvbQ==", // base64 encoded
-  website: "https://chanhdai.com",
+  address: "Hyderabad, India",
+  phoneNumber: "ODI1NzAyMjc2Mg", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
+  email: "aXNoaXRhcGFsMzE0MUBnbWFpbC5jb20=", // base64 encoded
+  website: "https://ishita-portfolio-seven.vercel.app/",
   otherWebsites: [
-    "https://dai.ng",
-    "https://dai.so",
-    "https://d.io.vn",
-    "https://d.id.vn",
-    "https://dai.io.vn",
-    "https://dai.id.vn",
-    "https://chanhdai.io.vn",
-    "https://chanhdai.id.vn",
-    "https://ncdai.vn",
-    "https://ncdai.net",
-    "https://dai.is-a.dev",
+    // "https://dai.ng",
+    // "https://dai.so",
+    // "https://d.io.vn",
+    // "https://d.id.vn",
+    // "https://dai.io.vn",
+    // "https://dai.id.vn",
+    // "https://chanhdai.io.vn",
+    // "https://chanhdai.id.vn",
+    // "https://ncdai.vn",
+    // "https://ncdai.net",
+    // "https://dai.is-a.dev",
   ],
-  dateOfBirth: "2000-08-14", // YYYY-MM-DD
-  jobTitle: "Software Developer & UI/UX Designer",
+  dateOfBirth: "2000-02-16", // YYYY-MM-DD
+  jobTitle: "Founding Engineer and AI Lead",
   jobs: [
     {
-      title: "Senior Frontend Developer & UI Design Lead",
-      company: "Simplamo",
-      website: "https://simplamo.com?ref=IN-926722",
+      title: "Founding Engineer and AI Lead",
+      company: "Storefox.ai",
+      website: "https://storefox.ai",
     },
     {
-      title: "Founder",
-      company: "Quaric",
-      website: "https://quaric.com",
+      title: "AI Researcher",
+      company: "Hashkraft",
+      website: "https://hashkraft.com/",
+    },
+    {
+      title: "Computer Vision Research Intern",
+      company: "Coriolis",
+      website: "https://www.coriolis.co.in/",
+    },
+    {
+      title: "Research Intern",
+      company: "Conseil Européen pour la Recherche Nucléaire(CERN), France",
+      website: "https://home.cern/",
+    },
+    {
+      title: "Research Intern",
+      company: "DESY",
+      website: "https://desy.de/index_eng.html",
     },
   ],
   about: `
@@ -55,5 +70,5 @@ Let's connect and collaborate!
   ogImage: "https://assets.chanhdai.com/images/screenshot-og-image-dark.png",
   keywords:
     "ncdai, nguyenchanhdai, nguyen chanh dai, chanhdai, chanh dai, iamncdai, quaric, zadark, nguyễn chánh đại, chánh đại",
-  dateCreated: "2023-10-20", // YYYY-MM-DD
+  dateCreated: "2025-07-05", // YYYY-MM-DD
 };
