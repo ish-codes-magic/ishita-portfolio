@@ -8,7 +8,7 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Language"],
   },
   {
-    key: "aws",
+    key: "AWS",
     title: "AWS",
     href: "https://aws.amazon.com/",
     categories: ["Cloud"],
@@ -50,9 +50,9 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Database"],
   },
   {
-    key: "redis",
-    title: "Redis",
-    href: "https://redis.io/",
+    key: "firebase",
+    title: "Firebase",
+    href: "https://firebase.google.com/",
     categories: ["Database"],
   },
   {
