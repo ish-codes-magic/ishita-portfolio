@@ -2,15 +2,15 @@ import type { Experience } from "../types/experiences";
 
 export const EXPERIENCES: Experience[] = [
   {
-    id: "simplamo",
-    companyName: "Simplamo Enterprise JSC",
-    companyLogo: "https://assets.chanhdai.com/images/companies/simplamo.webp",
+    id: "Storefox.ai",
+    companyName: "Storefox.ai",
+    companyLogo: "https://assets.chanhdai.com/images/companies/storefox.webp",
     positions: [
       {
         id: "20f8bfe5-b6a3-4b0d-ac2f-6fccd50d417e",
-        title: "Senior Frontend Developer",
+        title: "Founding Engineer and AI Lead",
         employmentPeriod: {
-          start: "10.2022",
+          start: "08.2024",
         },
         employmentType: "Full-time",
         icon: "code",
@@ -37,19 +37,6 @@ export const EXPERIENCES: Experience[] = [
           "Problem-solving",
         ],
         isExpanded: true,
-      },
-      {
-        id: "cedd7adb-4118-4085-9983-ae00530b49e2",
-        title: "UI Design Lead",
-        employmentPeriod: {
-          start: "10.2022",
-        },
-        employmentType: "Full-time",
-        icon: "design",
-        description: `- Ensure UI/UX consistency and high-quality standards.
-- Design intuitive, user-focused interfaces aligned with business goals.
-- Define and establish a cohesive UI style for Simplamo.`,
-        skills: ["Creativity", "UI/UX Design", "Figma"],
       },
     ],
     isCurrentEmployer: true,

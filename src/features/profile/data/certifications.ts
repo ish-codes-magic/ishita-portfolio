@@ -2,23 +2,22 @@ import type { Certification } from "../types/certifications";
 
 export const CERTIFICATIONS: Certification[] = [
   {
-    title: "Certificate of Trademark Registration No. 543682",
-    issuer: "Intellectual Property Office of Viet Nam",
-    issuerLogoURL:
-      "https://assets.chanhdai.com/images/companies/ipvietnam.webp",
-    issueDate: "2025-05-08",
-    credentialID: "543682",
-    credentialURL:
-      "https://drive.google.com/file/d/1x7YzlK1kyz16h28ux9k3KAwnZFAabsvq/view?usp=sharing",
-  },
-  {
-    title: "Next.js SEO Fundamentals",
-    issuer: "Vercel",
-    issuerIconName: "vercel",
-    issueDate: "2025-04-26",
+    title: "AI Trailblazer",
+    issuer: "Verix",
+    issuerLogoURL: "https://assets.chanhdai.com/images/companies/verix.webp",
+    issueDate: "2025-05-14",
     credentialID: "seo-47463-1745634751873",
     credentialURL:
-      "https://nextjs.org/learn/certificate?course=seo&user=47463&certId=seo-47463-1745634751873",
+      "https://www.verix.io/credential/42e1b25a-70be-48a2-9816-95e4f8602d69",
+  },
+  {
+    title: "Neural Networks and Deep Learning",
+    issuer: "Coursera",
+    issuerLogoURL: "https://assets.chanhdai.com/images/companies/coursera.webp",
+    issueDate: "2021-04-03",
+    credentialID: "543682",
+    credentialURL:
+      "https://www.coursera.org/account/accomplishments/verify/39QKKK99KA6E?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse",
   },
   {
     title: "Next.js App Router Fundamentals",

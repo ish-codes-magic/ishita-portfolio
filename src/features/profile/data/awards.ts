@@ -3,14 +3,13 @@ import type { Award } from "../types/awards";
 export const AWARDS: Award[] = [
   {
     id: "a144bd19-3706-4e4c-ba22-0e0d8302642a",
-    prize: "1st Prize",
-    title: "Can Tho City Young Informatics Contest 2014",
-    date: "2014-05",
-    grade: "Grade 8",
-    description:
-      "- Field: Creative Software\n- Project: Website Hành Trình Khám Phá Miền Tây",
-    referenceLink:
-      "https://drive.google.com/file/d/16bia3XoeVbSlfvg4FzVapQf3LVI8wUA-/view?usp=sharing",
+    prize: "Rank 4339 out of 2,00,000",
+    title: "JEE Advanced 2018",
+    date: "2018-05",
+    grade: "Grade 12",
+    description: "Achieved top 1 percentile in JEE Advanced 2018",
+    // referenceLink:
+    //   "https://drive.google.com/file/d/16bia3XoeVbSlfvg4FzVapQf3LVI8wUA-/view?usp=sharing",
   },
   {
     id: "d9dc1a25-7976-47f8-925e-051285822d54",

@@ -29,7 +29,8 @@ export const MAIN_NAV: NavItem[] = [
   },
 ];
 
-export const SOURCE_CODE_GITHUB_URL = "https://github.com/ncdai/chanhdai.com";
+export const SOURCE_CODE_GITHUB_URL =
+  "https://github.com/ish-codes-magic/ishita-portfolio/tree/main";
 
 export const UTM_PARAMS = {
   utm_source: "chanhdai.com",
