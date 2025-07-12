@@ -2,327 +2,177 @@ import type { Experience } from "../types/experiences";
 
 export const EXPERIENCES: Experience[] = [
   {
-    id: "Storefox.ai",
+    id: "storefox",
     companyName: "Storefox.ai",
     companyLogo: "https://assets.chanhdai.com/images/companies/storefox.webp",
     positions: [
       {
-        id: "20f8bfe5-b6a3-4b0d-ac2f-6fccd50d417e",
-        title: "Founding Engineer and AI Lead",
+        id: "founding-ai-engineer",
+        title: "Founding AI engineer - Core Team",
         employmentPeriod: {
-          start: "08.2024",
+          start: "2024",
         },
         employmentType: "Full-time",
         icon: "code",
-        description: `- Develop [AI Chat](https://help.simplamo.com/features/simplamo-ai/ai-chat/guide_simplamo_ai_chat?ref=IN-926722) and [AI Assistant](https://help.simplamo.com/features/simplamo-ai/ai-expert/aiexpert-rockdiscribe?ref=IN-926722) features.
-- Develop [Whiteboards](https://help.simplamo.com/features/whiteboard/overview?ref=IN-926722) with real-time collaboration.
-- Build and maintain the [Zalo Mini App](https://zalo.me/s/1736112917405511258/) for Simplamo with seamless integration.
-- Develop interactive chart and analytics widgets for the [Dashboard](https://help.simplamo.com/features/dashboard/overview) to enhance data visualization.
-- Develop and maintain core features to enhance functionality and user experience.
-- Ensure UI/UX consistency and adherence to standards.
-- Implement robust frontend solutions for web and mobile platforms.
-- Analyze technical capabilities and provide optimal solutions.`,
+        description: `- Designing and implementing a scalable system for capturing and analyzing customer-representative interactions in retail environments.
+- Working with state-of-the-art ASR models, Speaker Embeddings and Audio Models to transcribe large volumes of audio data, optimizing for accuracy in noisy and dynamic retail settings.
+- Integrating transcribed data into LLMs to generate insights from customer-representative conversations, to drive business for physical stores.
+- Collaborating with teams across machine learning, data engineering, and retail operations to design, test, and deploy the audio analysis system.`,
         skills: [
-          "TypeScript",
-          "Next.js",
-          "React Native",
-          "MobX",
-          "MobX-State-Tree",
-          "Tailwind CSS",
-          "Dify",
-          "Zalo Mini App",
-          "Agile",
-          "Teamwork",
-          "Research",
-          "Problem-solving",
-        ],
-        isExpanded: true,
-      },
-    ],
-    isCurrentEmployer: true,
-  },
-  {
-    id: "quaric",
-    companyName: "Quaric Co., Ltd.",
-    companyLogo: "https://assets.chanhdai.com/images/companies/quaric.svg",
-    positions: [
-      {
-        id: "30d3a9fb-021d-452a-9d27-83655369b4b9",
-        title: "Software Engineer",
-        employmentPeriod: {
-          start: "03.2024",
-        },
-        employmentType: "Part-time",
-        icon: "code",
-        description: `In-house Project: [Quaric Website](https://quaric.com)
-- Integrated VNPAY-QR for secure transactions.
-- Registered the e-commerce site with [online.gov.vn](http://online.gov.vn/website/chi-tiet-115855) for compliance.
-- Developed online ordering to streamline purchases.
-
-In-house Project: [ZaDark](https://zadark.com)
-- Build and maintain ZaDark.com with Docusaurus, integrating AdSense.
-- Develop and maintain the ZaDark extension for Zalo Web on Chrome, Safari, Edge, and Firefox — with 15,000+ active users via Chrome Web Store.`,
-        skills: [
-          "Next.js",
-          "Strapi",
-          "Auth0",
-          "VNPAY-QR",
-          "Docker",
-          "NGINX",
-          "Google Cloud",
-          "Docusaurus",
-          "Extension",
-          "Research",
-          "Project Management",
-        ],
-        isExpanded: true,
-      },
-      {
-        id: "7586afb2-40e8-49c4-8983-2254c9446540",
-        title: "Product Designer",
-        employmentPeriod: {
-          start: "03.2024",
-        },
-        employmentType: "Part-time",
-        icon: "design",
-        description: `- Design UI/UX for Quaric Website with a seamless experience.
-- Develop a Design System for consistency and efficiency.
-- Create Quaric's brand identity, including logo and guidelines.`,
-        skills: [
-          "UI/UX Design",
-          "UX Writing",
-          "Design System",
-          "Brand Design",
-          "Figma",
-        ],
-      },
-      {
-        id: "991692c4-7d02-4666-8d31-933c4831768d",
-        title: "Founder & Director",
-        employmentPeriod: {
-          start: "03.2024",
-        },
-        employmentType: "Part-time",
-        icon: "idea",
-        description: `- Lead and manage the company's strategy.
-- Oversee technical teams and product development.
-- Manage relationships with customers and partners.`,
-        skills: ["Business Ownership", "Business Law", "Business Tax"],
-      },
-    ],
-    isCurrentEmployer: true,
-  },
-  {
-    id: "tungtung",
-    companyName: "Tung Tung JSC",
-    companyLogo: "https://assets.chanhdai.com/images/companies/tungtung.webp",
-    positions: [
-      {
-        id: "3e831244-8d8c-41e2-b2ce-7f3946956afd",
-        title: "Web Developer",
-        employmentPeriod: {
-          start: "2020",
-          end: "2022",
-        },
-        employmentType: "Full-time",
-        description: `- Built a scalable design system for consistency and efficiency.
-- Built a complex rich-text editor based on ProseMirror and Slate for customizable content creation.
-- Integrated APIs with the Backend Team to enhance functionality.`,
-        icon: "code",
-        skills: [
-          "React",
-          "Redux",
-          "Storybook",
-          "Lerna",
-          "Agile",
-          "Teamwork",
-          "Research",
-        ],
-        isExpanded: true,
-      },
-      {
-        id: "13bd34c3-db84-4fad-8132-a6c89a42957e",
-        title: "Mobile Developer",
-        employmentPeriod: {
-          start: "2019",
-          end: "2020",
-        },
-        employmentType: "Full-time",
-        description: `- Rebuilt the app with React Native for better UX and performance.
-- Integrated MoMo and in-app purchases for seamless payments.
-- Optimized deployment for staging and production.
-- Published on App Store and Google Play, ensuring compliance.`,
-        icon: "code",
-        skills: [
-          "React Native",
-          "Redux",
-          "MoMo Payment API",
-          "App Store",
-          "Google Play Store",
-          "App Center",
-          "Agile",
-          "Teamwork",
-          "Research",
-        ],
-        isExpanded: true,
-      },
-      {
-        id: "73151add-7adf-4035-a237-b5803ceb5478",
-        title: "UI/UX Designer",
-        employmentPeriod: {
-          start: "2018",
-          end: "2019",
-        },
-        employmentType: "Full-time",
-        description: `- Designed a Landing Page for enterprise clients.
-- Redesigned the Online Quiz Platform for a modern look on web and mobile.
-- Redesigned the Pricing interface for individual customers.
-- Enhanced UX by improving usability, navigation, and user flow.`,
-        icon: "design",
-        skills: ["UI/UX Design", "Sketch"],
-        isExpanded: true,
-      },
-    ],
-  },
-  {
-    id: "freelance",
-    companyName: "Freelance",
-    positions: [
-      {
-        id: "f0becfba-057d-40db-b252-739e1654faa1",
-        title: "Full-stack Developer",
-        employmentPeriod: {
-          start: "2018",
-          end: "2020",
-        },
-        employmentType: "Part-time",
-        description: `- Built an order management website with real-time delivery tracking.
-- Developed an e-commerce site for bird's nest products.
-- Created a map to display monitoring station data.
-- Designed a customizable WordPress landing page.`,
-        icon: "code",
-        skills: [
-          "Laravel",
-          "React",
-          "Express.js",
-          "Socket.IO",
-          "MongoDB",
-          "Firebase",
-          "WordPress",
-          "Docker",
-          "NGINX",
-        ],
-      },
-      {
-        id: "0eecdfcb-028d-41f4-93e9-1269ba7eff7e",
-        title: "Graphic & UI/UX Designer",
-        employmentPeriod: {
-          start: "2018",
-          end: "2019",
-        },
-        employmentType: "Part-time",
-        description: "Designed logos, posters, ads, and UI.",
-        icon: "design",
-        skills: [
-          "Creativity",
-          "UI/UX Design",
-          "Graphic Design",
-          "Sketch",
-          "Adobe Photoshop",
-          "Adobe Illustrator",
-        ],
-      },
-    ],
-  },
-  {
-    id: "education",
-    companyName: "Education",
-    positions: [
-      {
-        id: "c47f5903-88ae-4512-8a50-0b91b0cf99b6",
-        title: "University of Science — VNUHCM",
-        employmentPeriod: {
-          start: "08.2018",
-          end: "2026",
-        },
-        icon: "education",
-        description: `- Currently studying for a Bachelor's degree in Information Systems.
-- Language Proficiency: B1 English Level.
-- Achieved several awards, including:
-  - Bronze Medal — 10th Design, Manufacturing, and Application Award 2022
-  - 2nd Prize — Business Startup Competition 2019`,
-        skills: [
-          "C++",
-          "Java",
+          "ASR Models",
+          "Speaker Embeddings",
+          "Audio Models",
+          "LLMs",
+          "Machine Learning",
+          "Data Engineering",
+          "System Architecture",
+          "Retail Analytics",
           "Python",
-          "Data Structures",
-          "Algorithms",
-          "Advanced Databases",
-          "Systems Design",
-          "Distributed Systems",
-          "Software Engineering",
-          "Self-learning",
-          "Teamwork",
-          "Presentation",
+          "AI/ML",
+          "Audio Processing",
+          "NLP",
         ],
+        isExpanded: true,
       },
+    ],
+    isCurrentEmployer: true,
+  },
+  {
+    id: "hashkraft",
+    companyName: "Hashkraft",
+    positions: [
       {
-        id: "70131ed8-36d9-4e54-8c78-eaed18240eca",
-        title: "Ly Tu Trong High School for the Gifted — Can Tho City",
+        id: "lead-data-scientist",
+        title: "Lead Data Scientist",
         employmentPeriod: {
-          start: "08.2015",
-          end: "06.2018",
+          start: "06.2022",
+          end: "06.2023",
         },
-        icon: "education",
-        description: `- Student of the Specialized Computer Science Program.
-- Granted direct admission to university due to achieving 3rd Prize at the national level.
-- [Achieved numerous awards](https://baocantho.com.vn/nguyen-chanh-dai-17-tuoi-va-19-giai-thuong-a97348.html) at city and national levels, including:
-  - [3rd Prize](https://muctim.tuoitre.vn/cong-cu-ho-tro-viec-day-va-hoc-55107.htm) — National Science and Engineering Fair 2018 (ViSEF)
-  - 1st Prize — Can Tho City Science and Engineering Fair 2018
-  - Creativity Award — Binh Duong Hackathon 2017
-  - Consolation Prize — National Youth and Children's Creativity Contest 2016
-  - [1st Prize](https://www.youtube.com/watch?v=OYgugvjqU4A) — Can Tho City Youth and Children's Creativity Contest 2016
-  - 3rd Prize — National Young Informatics Contest 2016
-- Achieved the title of Outstanding Student from Grade 10-12.
-- Selected for the National Excellent Student Contest in Informatics for two consecutive years during high school.
-- Honored on the school's "Hall of Fame" for academic achievements.
-- Developed a feature using Node.js and Pandoc to recognize multiple-choice questions from .docx files and upload them to an [online quiz platform](https://youtu.be/QjR99wdmTyo) I created.
-- Developed websites based on Laravel framework.
-- Built websites with PHP and MySQL, following the MVC architecture.`,
+        employmentType: "Full-time",
+        icon: "code",
+        description: `- Designed and built a large-scale hiring platform leveraging advanced AI techniques, including LLMs (e.g., GPT-4), Retrieval-Augmented Generation (RAG) frameworks (e.g., Langchain), and vector databases (e.g., Chroma), reducing hiring time by 90%.
+- Led the end-to-end design and development of an AI-based real estate chatbot, applying advanced NLP models (GPT-4) and Elasticsearch for accurate property search and retrieval, showcasing strong system architecture and algorithm design skills and deploying it to cloud using AWS.
+- Managed a team of two interns, guiding them through development projects while overseeing workflow management.`,
         skills: [
-          "Algorithms",
-          "C++",
-          "PHP",
-          "MySQL",
-          "Laravel",
-          "Node.js",
-          "Pandoc",
-          "Self-learning",
+          "LLMs",
+          "GPT-4",
+          "RAG",
+          "Langchain",
+          "Vector Databases",
+          "Chroma",
+          "NLP",
+          "Elasticsearch",
+          "AWS",
+          "System Architecture",
+          "Team Management",
+          "Python",
+          "Machine Learning",
+          "AI/ML",
         ],
+        isExpanded: true,
       },
+    ],
+  },
+  {
+    id: "coriolis",
+    companyName: "Coriolis Technologies",
+    positions: [
       {
-        id: "36c4c6fb-02d0-48c0-8947-fda6e9a24af7",
-        title: "Thuan Hung Secondary School",
+        id: "data-science-intern",
+        title: "Data Science Intern",
         employmentPeriod: {
-          start: "08.2011",
-          end: "06.2015",
+          start: "10.2021",
+          end: "12.2021",
         },
-        icon: "education",
-        description: `- Recognized as the most outstanding student of the district.
-- Achieved numerous awards at city and national levels:
-  - Consolation Prize — National Young Informatics Contest 2015
-  - Consolation Prize — National Young Informatics Contest 2014
-  - 1st Prize — Can Tho City Young Informatics Contest 2014
-- Achieved the title of Outstanding Student from Grade 6-9.
-- Developed websites using the open-source NukeViet CMS.`,
+        employmentType: "Internship",
+        icon: "code",
+        description: `- Developed an AI based surveillance software with a team of about 5-6 people.
+- Deployed on scale face recognition algorithms with an accuracy of 75% on Spark.
+- Optimised object detection on spark increasing processing speed from 16 to 30 frames/s.
+- Improved the loading time of the UI reducing it from 1-2 minutes to 15 seconds.
+- Developed a scalable and fault-tolerant system that can process 60 million images per day by deploying it on Kubernetes.
+- Automated the entire process of setting up our Kubernetes cluster using Ansible, reducing the deployment time from 3 hours to 15 minutes.
+- Managed a team of 7 full time interns working on 4 different projects, overseeing their onboarding and mentoring, increasing the productivity of the entire team by 13%.`,
         skills: [
-          "Pascal",
-          "NukeViet",
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "Self-learning",
+          "Computer Vision",
+          "Face Recognition",
+          "Object Detection",
+          "Apache Spark",
+          "Kubernetes",
+          "Ansible",
+          "DevOps",
+          "Team Management",
+          "Python",
+          "Machine Learning",
+          "AI/ML",
+          "System Optimization",
+          "UI Development",
         ],
+        isExpanded: true,
+      },
+    ],
+  },
+  {
+    id: "desy",
+    companyName: "Deutsches Elektronen-Synchrotron (DESY)",
+    positions: [
+      {
+        id: "summer-research-intern",
+        title: "Summer Research Intern",
+        employmentPeriod: {
+          start: "10.2021",
+          end: "12.2021",
+        },
+        employmentType: "Internship",
+        icon: "code",
+        description: `- Developed a predictive anomaly detection algorithm to forecast system failures during data transfers between global university experiments and DESY's data unit.
+- Established and managed a distributed computing environment using Apache Spark to efficiently process terabytes of data, enabling scalable analysis for anomaly detection.
+- Applied logistic regression on high-dimensional data, achieving an 85% accuracy in predicting system downtimes.`,
+        skills: [
+          "Anomaly Detection",
+          "Predictive Analytics",
+          "Apache Spark",
+          "Distributed Computing",
+          "Logistic Regression",
+          "Big Data",
+          "Machine Learning",
+          "Python",
+          "Data Science",
+          "High-Dimensional Data",
+        ],
+        isExpanded: true,
+      },
+    ],
+  },
+  {
+    id: "cern",
+    companyName: "Conseil européen pour la Recherche Nucléaire (CERN)",
+    positions: [
+      {
+        id: "research-assistant",
+        title: "Research Assistant",
+        employmentPeriod: {
+          start: "10.2021",
+          end: "12.2021",
+        },
+        employmentType: "Internship",
+        icon: "code",
+        description: `- Contributed to a joint project between CERN and IISER Pune, focused on synthetic data generation for the Higgs boson decay process to enable more robust statistical analysis in particle physics experiments.
+- Implemented the RealNVP normalizing flow model to generate synthetic data points from latent space, matching the original distribution of Higgs decay data from particle physics experiments.
+- After performing statistical analysis on synthetically generated data, we found that the statistical results closely matched the experimental values, confirming the viability of RealNVP models for data augmentation in scientific research.`,
+        skills: [
+          "Particle Physics",
+          "Synthetic Data Generation",
+          "RealNVP",
+          "Normalizing Flows",
+          "Statistical Analysis",
+          "Deep Learning",
+          "Python",
+          "Scientific Research",
+          "Data Augmentation",
+          "Machine Learning",
+        ],
+        isExpanded: true,
       },
     ],
   },
