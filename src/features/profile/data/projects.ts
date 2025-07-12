@@ -27,6 +27,32 @@ export const PROJECTS: Project[] = [
     isExpanded: true,
   },
   {
+    id: "alexnet-implementation-from-scratch",
+    title: "AlexNet Implementation From Scratch",
+    period: {
+      start: "2024", // You can update this with the actual period
+    },
+    link: "https://github.com/ish-codes-magic/Alexnet_from_scratch", // Add GitHub link here when available
+    skills: [
+      "Python",
+      "PyTorch",
+      "Computer Vision",
+      "Deep Learning",
+      "Image Classification",
+      "Convolutional Neural Networks",
+      "Transfer Learning",
+      "Model Training",
+      "Model Evaluation",
+    ],
+    description: `Personal deep learning project showcasing my understanding of convolutional neural networks and hands-on experience with PyTorch.
+- Recreated the AlexNet architecture from scratch, including 5 convolutional layers, 3 fully connected layers, ReLU activations, dropout, and Local Response Normalization.
+- Built a complete training pipeline with model checkpoints, training/validation loops, and performance logging using TensorBoard.
+- Implemented key training techniques such as mixed precision training, label smoothing, cosine annealing scheduler, and gradient clipping.
+- Tested the model on datasets like CIFAR-10 and custom image classification tasks to validate accuracy and generalization.
+- Demonstrated ability to work with neural network layers, data loaders, optimizers, and training loops directly in PyTorch.`,
+    isExpanded: true,
+  },
+  {
     id: "spotify-etl-pipeline",
     title: "Spotify ETL Pipeline",
     period: {
@@ -52,32 +78,6 @@ export const PROJECTS: Project[] = [
 - Utilizes AWS services including Amazon S3 for scalable and secure storage
 - Stores processed song details in CSV format for further analysis
 - Implements robust error handling and monitoring for data pipeline reliability`,
-    isExpanded: true,
-  },
-  {
-    id: "alexnet-implementation-from-scratch",
-    title: "AlexNet Implementation From Scratch",
-    period: {
-      start: "2024", // You can update this with the actual period
-    },
-    link: "https://github.com/ish-codes-magic/Alexnet_from_scratch", // Add GitHub link here when available
-    skills: [
-      "Python",
-      "PyTorch",
-      "Computer Vision",
-      "Deep Learning",
-      "Image Classification",
-      "Convolutional Neural Networks",
-      "Transfer Learning",
-      "Model Training",
-      "Model Evaluation",
-    ],
-    description: `Personal deep learning project showcasing my understanding of convolutional neural networks and hands-on experience with PyTorch.
-- Recreated the AlexNet architecture from scratch, including 5 convolutional layers, 3 fully connected layers, ReLU activations, dropout, and Local Response Normalization.
-- Built a complete training pipeline with model checkpoints, training/validation loops, and performance logging using TensorBoard.
-- Implemented key training techniques such as mixed precision training, label smoothing, cosine annealing scheduler, and gradient clipping.
-- Tested the model on datasets like CIFAR-10 and custom image classification tasks to validate accuracy and generalization.
-- Demonstrated ability to work with neural network layers, data loaders, optimizers, and training loops directly in PyTorch.`,
     isExpanded: true,
   },
 ];
