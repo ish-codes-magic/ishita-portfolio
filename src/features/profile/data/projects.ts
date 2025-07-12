@@ -53,6 +53,32 @@ export const PROJECTS: Project[] = [
     isExpanded: true,
   },
   {
+    id: "vggnet-implementation-from-scratch",
+    title: "VGGNet Implementation From Scratch",
+    period: {
+      start: "2024", // You can update this with the actual period
+    },
+    link: "https://github.com/ish-codes-magic/VGGNet_from_scratch", // Add GitHub link here when available
+    skills: [
+      "Python",
+      "PyTorch",
+      "Computer Vision",
+      "Deep Learning",
+      "Image Classification",
+      "Convolutional Neural Networks",
+      "Transfer Learning",
+      "Model Training",
+      "Model Evaluation",
+    ],
+    description: `Personal deep learning project showcasing my understanding of convolutional neural networks and hands-on experience with PyTorch.
+- Implemented the VGGNet architecture (including VGG-11, VGG-13, VGG-16, and VGG-19) from scratch with support for optional batch normalization.
+- Trained the models on the CIFAR-100 dataset using data augmentation, mixed precision training, and label smoothing for better generalization.
+- Developed an advanced training pipeline featuring exponential moving average (EMA), cosine annealing learning rate scheduler, checkpointing, and TensorBoard logging.
+- Adapted the architecture for small image sizes (32×32), with full support for resume training, real-time metric tracking, and structured logging.
+- Demonstrated in-depth knowledge of training loops, model optimization and data handling using PyTorch.`,
+    isExpanded: true,
+  },
+  {
     id: "spotify-etl-pipeline",
     title: "Spotify ETL Pipeline",
     period: {
