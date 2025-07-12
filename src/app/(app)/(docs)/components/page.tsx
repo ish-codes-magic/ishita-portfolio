@@ -5,7 +5,7 @@ import { Icons } from "@/components/icons";
 import { getPostsByCategory } from "@/data/blog";
 
 export const metadata: Metadata = {
-  title: "Components",
+  title: "AI Safety",
   description: "A collection of reusable components.",
 };
 
@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <div className="min-h-svh [--color-react:#087EA4] dark:[--color-react:#58C4DC]">
       <div className="screen-line-after px-4">
-        <h1 className="text-3xl font-semibold">Components</h1>
+        <h1 className="text-3xl font-semibold">AI Safety</h1>
       </div>
 
       <div className="screen-line-after p-4">

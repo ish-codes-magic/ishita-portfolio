@@ -24,7 +24,7 @@ export const MAIN_NAV: NavItem[] = [
     href: "/blog",
   },
   {
-    title: "Components",
+    title: "AI Safety",
     href: "/components",
   },
 ];

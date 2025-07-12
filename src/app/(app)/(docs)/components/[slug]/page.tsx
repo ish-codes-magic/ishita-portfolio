@@ -121,7 +121,7 @@ export default async function Page({
         <Button className="px-0 text-muted-foreground" variant="link" asChild>
           <Link href="/components">
             <ArrowLeftIcon />
-            Components
+            AI Safety
           </Link>
         </Button>
 
