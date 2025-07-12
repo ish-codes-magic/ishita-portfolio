@@ -12,6 +12,7 @@ export const EXPERIENCES: Experience[] = [
         employmentPeriod: {
           start: "2024",
         },
+        location: "Bangalore, India",
         employmentType: "Full-time",
         icon: "code",
         description: `- Designing and implementing a scalable system for capturing and analyzing customer-representative interactions in retail environments.
@@ -48,6 +49,7 @@ export const EXPERIENCES: Experience[] = [
           start: "06.2022",
           end: "06.2023",
         },
+        location: "Hyderabad",
         employmentType: "Full-time",
         icon: "code",
         description: `- Designed and built a large-scale hiring platform leveraging advanced AI techniques, including LLMs (e.g., GPT-4), Retrieval-Augmented Generation (RAG) frameworks (e.g., Langchain), and vector databases (e.g., Chroma), reducing hiring time by 90%.
@@ -84,6 +86,7 @@ export const EXPERIENCES: Experience[] = [
           start: "10.2021",
           end: "12.2021",
         },
+        location: "Pune",
         employmentType: "Internship",
         icon: "code",
         description: `- Developed an AI based surveillance software with a team of about 5-6 people.
@@ -123,6 +126,7 @@ export const EXPERIENCES: Experience[] = [
           start: "10.2021",
           end: "12.2021",
         },
+        location: "Germany",
         employmentType: "Internship",
         icon: "code",
         description: `- Developed a predictive anomaly detection algorithm to forecast system failures during data transfers between global university experiments and DESY's data unit.
@@ -155,6 +159,7 @@ export const EXPERIENCES: Experience[] = [
           start: "10.2021",
           end: "12.2021",
         },
+        location: "France",
         employmentType: "Internship",
         icon: "code",
         description: `- Contributed to a joint project between CERN and IISER Pune, focused on synthetic data generation for the Higgs boson decay process to enable more robust statistical analysis in particle physics experiments.

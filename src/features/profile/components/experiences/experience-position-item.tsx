@@ -41,7 +41,6 @@ export function ExperiencePositionItem({
             <h4 className="flex-1 font-medium text-balance">
               {position.title}
             </h4>
-
             <div
               className="shrink-0 text-muted-foreground [&_svg]:size-4"
               aria-hidden
@@ -52,6 +51,18 @@ export function ExperiencePositionItem({
           </div>
 
           <div className="flex items-center gap-2 pl-9 text-sm text-muted-foreground">
+            {position.location && (
+              <>
+                <dl>
+                  <dt className="sr-only">Location</dt>
+                  <dd>{position.location}</dd>
+                </dl>
+                <Separator
+                  className="data-[orientation=vertical]:h-4"
+                  orientation="vertical"
+                />
+              </>
+            )}
             {position.employmentType && (
               <>
                 <dl>
