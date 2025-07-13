@@ -181,4 +181,79 @@ export const EXPERIENCES: Experience[] = [
       },
     ],
   },
+  {
+    id: "iiser-pune",
+    companyName:
+      "Indian Institute of Science Education and Research (IISER), Pune",
+    positions: [
+      {
+        id: "research-assistant",
+        title: "Research Assistant",
+        employmentPeriod: {
+          start: "01.2022",
+          end: "05.2022",
+        },
+        location: "Pune",
+        employmentType: "Internship",
+        icon: "code",
+        description: `- Explored and evaluated various clustering algorithms to identify the most effective method for analyzing epigenetic data.
+- Developed and tested implementation pipelines for algorithms including K-Means, DBSCAN, Hierarchical Clustering, and others using Python and scikit-learn.
+- Designed sample test cases and applied clustering techniques to biological datasets, comparing results across algorithms for accuracy and reliability.
+- Assessed clustering quality using metrics such as the elbow method, silhouette score, and intra-cluster distance to determine optimal performance.
+- Gained experience in unsupervised machine learning, data preprocessing, and applying statistical metrics to real-world scientific datasets.`,
+        skills: [
+          "Clustering Algorithms",
+          "K-Means",
+          "DBSCAN",
+          "Hierarchical Clustering",
+          "Unsupervised Learning",
+          "Data Preprocessing",
+          "Statistical Analysis",
+          "Deep Learning",
+          "Python",
+          "Machine Learning",
+          "AI/ML",
+          "Data Science",
+          "Data Preprocessing",
+          "Statistical Analysis",
+        ],
+        isExpanded: true,
+      },
+    ],
+  },
+  {
+    id: "iiser-pune",
+    companyName: "University of Glasgow",
+    positions: [
+      {
+        id: "research-assistant",
+        title: "Research Assistant",
+        employmentPeriod: {
+          start: "01.2022",
+          end: "05.2022",
+        },
+        location: "Scotland",
+        employmentType: "Internship",
+        icon: "code",
+        description: `- Worked on a research-oriented project exploring how neural networks can be used to probe Effective Field Theory (EFT) couplings, inspired by the ATLAS experiment and the paper "Parameterized Machine Learning for High-Energy Physics".
+- Processed simulated event-level datasets using NumPy and Pandas, followed by exploratory data analysis (EDA) to understand feature distributions and parameter dependencies.
+- Developed and trained a parameterized neural network that incorporates both event features and physics parameters as inputs, enabling smooth interpolation across different EFT coupling values.
+- This project strengthened my knowledge of machine learning in high-energy physics, EFT parameterization, and designing neural networks that generalize over a range of theoretical parameters.`,
+        skills: [
+          "Machine Learning",
+          "Deep Learning",
+          "Python",
+          "Data Science",
+          "High-Energy Physics",
+          "Effective Field Theory",
+          "Parameterized Machine Learning",
+          "Neural Networks",
+          "AI/ML",
+          "Data Science",
+          "Data Preprocessing",
+        ],
+        isExpanded: true,
+      },
+    ],
+  },
 ];
