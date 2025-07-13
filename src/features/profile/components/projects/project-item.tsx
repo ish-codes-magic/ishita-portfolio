@@ -1,7 +1,7 @@
 import {
   ChevronsDownUpIcon,
   ChevronsUpDownIcon,
-  InfinityIcon,
+  // InfinityIcon,
   LinkIcon,
 } from "lucide-react";
 import Image from "next/image";
@@ -29,8 +29,8 @@ export function ProjectItem({
   className?: string;
   project: Project;
 }) {
-  const { start, end } = project.period;
-  const isOngoing = !end;
+  // const { start, end } = project.period;
+  // const isOngoing = !end;
 
   return (
     <Collapsible defaultOpen={project.isExpanded} asChild>
@@ -63,7 +63,7 @@ export function ProjectItem({
                   {project.title}
                 </h3>
 
-                <dl className="text-sm text-muted-foreground">
+                {/* <dl className="text-sm text-muted-foreground">
                   <dt className="sr-only">Period</dt>
                   <dd className="flex items-center gap-0.5">
                     <span>{start}</span>
@@ -80,7 +80,7 @@ export function ProjectItem({
                       <span>{end}</span>
                     )}
                   </dd>
-                </dl>
+                </dl> */}
               </div>
 
               <SimpleTooltip content="Open Project Link">
