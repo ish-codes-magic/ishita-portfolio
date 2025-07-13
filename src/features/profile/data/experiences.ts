@@ -8,30 +8,42 @@ export const EXPERIENCES: Experience[] = [
     positions: [
       {
         id: "founding-ai-engineer",
-        title: "Founding AI engineer - Core Team",
+        title: "Founding Engineer and AI Lead",
         employmentPeriod: {
-          start: "2024",
+          start: "06.2024",
         },
         location: "Bangalore, India",
         employmentType: "Full-time",
         icon: "code",
-        description: `- Designing and implementing a scalable system for capturing and analyzing customer-representative interactions in retail environments.
-- Working with state-of-the-art ASR models, Speaker Embeddings and Audio Models to transcribe large volumes of audio data, optimizing for accuracy in noisy and dynamic retail settings.
-- Integrating transcribed data into LLMs to generate insights from customer-representative conversations, to drive business for physical stores.
-- Collaborating with teams across machine learning, data engineering, and retail operations to design, test, and deploy the audio analysis system.`,
+        description: `- Led the end-to-end design and implementation of a scalable audio processing pipeline for analyzing customer-representative interactions in retail environments, delivering actionable insights to drive business performance in physical stores.
+- Developed a robust system where raw audio is captured and cleaned using Silero Voice Activity Detection (VAD) to remove silent segments, followed by transcription via Gemini LLM models optimized for noisy retail settings.
+- Designed a two-tiered processing architecture: internal clips were filtered and categorized using LLMs, while external clips were further analyzed to generate structured insights tailored to client needs.
+- Instrumental in the development, testing, and validation of each pipeline component—built custom evaluation datasets and benchmarks to compare model performance, prompts, and filtering strategies.
+- Achieved a consistent **80% accuracy** across all insight-generation tasks, earning positive feedback from over 15 active clients.
+- Reduced audio processing time by **50%** (from 3 minutes to 1.5 minutes) and cut cost per hour of audio from **$100 to $20**, enabling the introduction of multiple pricing tiers for scalability.
+- Acted as the technical lead and manager for 4 interns, guiding their workstreams and significantly improving team productivity through structured task delegation and mentoring.
+- Worked closely with clients to understand domain-specific needs and customized the pipeline accordingly, resulting in high client satisfaction and successful adoption across diverse use cases.
+- Collaborated cross-functionally with product, frontend, and backend engineering teams to align development with business goals, effectively multitasking across responsibilities and delivering high-impact results.`,
         skills: [
-          "ASR Models",
-          "Speaker Embeddings",
-          "Audio Models",
+          "Azure Cloud",
+          "GCP",
+          "Speech-to-Text",
+          "AWS",
+          "AWS SageMaker",
+          "Prompt Engineering",
           "LLMs",
-          "Machine Learning",
-          "Data Engineering",
-          "System Architecture",
-          "Retail Analytics",
+          "GPT/Gemini models",
+          "LLM evaluations",
+          "Instructor",
+          "MongoDB",
+          "Jinja2",
+          "Docker",
+          "Redis",
+          "Celery",
           "Python",
           "AI/ML",
-          "Audio Processing",
-          "NLP",
+          "API design",
+          "Portkey",
         ],
         isExpanded: true,
       },
@@ -46,27 +58,35 @@ export const EXPERIENCES: Experience[] = [
         id: "lead-data-scientist",
         title: "Lead Data Scientist",
         employmentPeriod: {
-          start: "06.2022",
-          end: "06.2023",
+          start: "06.2023",
+          end: "06.2024",
         },
-        location: "Hyderabad",
+        location: "Hyderabad, India",
         employmentType: "Full-time",
         icon: "code",
-        description: `- Designed and built a large-scale hiring platform leveraging advanced AI techniques, including LLMs (e.g., GPT-4), Retrieval-Augmented Generation (RAG) frameworks (e.g., Langchain), and vector databases (e.g., Chroma), reducing hiring time by 90%.
-- Led the end-to-end design and development of an AI-based real estate chatbot, applying advanced NLP models (GPT-4) and Elasticsearch for accurate property search and retrieval, showcasing strong system architecture and algorithm design skills and deploying it to cloud using AWS.
-- Managed a team of two interns, guiding them through development projects while overseeing workflow management.`,
+        description: `- Developed an automated hiring platform using LLMs (like GPT-4), RAG technologies (like Langchain), and vector databases (like Chroma), cutting down hiring time by 90%
+- Implemented Zoom API integration for scheduling interviews and utilised Assembly AI and Claude 2 LLM to analyse interview transcripts, generating valuable insights for recruiters, significantly aiding in decision-making for hiring.
+- Designed, architected and led the development of the real estate chatbot project from scratch, showcasing strong architectural and design skills.
+- Employed a combination of GPT-4 and Elasticsearch for accurate property search responses and integrated Scrapy for dynamic web content extraction.
+- Spearheaded deployment on AWS using EC2, S3, EFS and Docker, demonstrating proficiency in cloud computing.
+- Managed a team of two interns, highlighting leadership and project management capabilities, utilizing tools like GitHub and Jira for workflow management.`,
         skills: [
           "LLMs",
-          "GPT-4",
+          "GPT/Gemini models",
           "RAG",
           "Langchain",
-          "Vector Databases",
+          "Pinecone",
           "Chroma",
           "NLP",
-          "Elasticsearch",
           "AWS",
-          "System Architecture",
-          "Team Management",
+          "Elasticsearch",
+          "Docker",
+          "Scrapy",
+          "Jira",
+          "GitHub",
+          "Whatsapp API",
+          "API design",
+          "Prompt Engineering",
           "Python",
           "Machine Learning",
           "AI/ML",
@@ -83,10 +103,10 @@ export const EXPERIENCES: Experience[] = [
         id: "data-science-intern",
         title: "Data Science Intern",
         employmentPeriod: {
-          start: "10.2021",
-          end: "12.2021",
+          start: "07.2022",
+          end: "06.2023",
         },
-        location: "Pune",
+        location: "Pune, India",
         employmentType: "Internship",
         icon: "code",
         description: `- Developed an AI based surveillance software with a team of about 5-6 people.
@@ -101,6 +121,15 @@ export const EXPERIENCES: Experience[] = [
           "Face Recognition",
           "Object Detection",
           "Apache Spark",
+          "PySpark",
+          "Docker",
+          "Ansible",
+          "Apache Kafka",
+          "Elasticsearch",
+          "Opensearch",
+          "OpenCV",
+          "PyTorch",
+          "Github",
           "Kubernetes",
           "Ansible",
           "DevOps",
@@ -116,6 +145,42 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    id: "cern",
+    companyName: "Conseil européen pour la Recherche Nucléaire (CERN)",
+    positions: [
+      {
+        id: "research-assistant",
+        title: "Research Assistant",
+        employmentPeriod: {
+          start: "01.2021",
+          end: "09.2021",
+        },
+        location: "Geneva, Switzerland",
+        employmentType: "Internship",
+        icon: "code",
+        description: `- Contributed to a joint project between CERN and IISER Pune, focused on synthetic data generation for the Higgs boson decay process to enable more robust statistical analysis in particle physics experiments.
+- Implemented the RealNVP normalizing flow model to generate synthetic data points from latent space, matching the original distribution of Higgs decay data from particle physics experiments.
+- After performing statistical analysis on synthetically generated data, we found that the statistical results closely matched the experimental values, confirming the viability of RealNVP models for data augmentation in scientific research.`,
+        skills: [
+          "Particle Physics",
+          "Synthetic Data Generation",
+          "RealNVP",
+          "Normalizing Flows",
+          "Generative Modeling",
+          "PyTorch",
+          "MADGraph",
+          "Statistical Analysis",
+          "Deep Learning",
+          "Python",
+          "Scientific Research",
+          "Data Augmentation",
+          "Machine Learning",
+        ],
+        isExpanded: true,
+      },
+    ],
+  },
+  {
     id: "desy",
     companyName: "Deutsches Elektronen-Synchrotron (DESY)",
     positions: [
@@ -123,10 +188,10 @@ export const EXPERIENCES: Experience[] = [
         id: "summer-research-intern",
         title: "Summer Research Intern",
         employmentPeriod: {
-          start: "10.2021",
-          end: "12.2021",
+          start: "07.2021",
+          end: "09.2021",
         },
-        location: "Germany",
+        location: "Hamburg, Germany",
         employmentType: "Internship",
         icon: "code",
         description: `- Developed a predictive anomaly detection algorithm to forecast system failures during data transfers between global university experiments and DESY's data unit.
@@ -143,39 +208,6 @@ export const EXPERIENCES: Experience[] = [
           "Python",
           "Data Science",
           "High-Dimensional Data",
-        ],
-        isExpanded: true,
-      },
-    ],
-  },
-  {
-    id: "cern",
-    companyName: "Conseil européen pour la Recherche Nucléaire (CERN)",
-    positions: [
-      {
-        id: "research-assistant",
-        title: "Research Assistant",
-        employmentPeriod: {
-          start: "10.2021",
-          end: "12.2021",
-        },
-        location: "France",
-        employmentType: "Internship",
-        icon: "code",
-        description: `- Contributed to a joint project between CERN and IISER Pune, focused on synthetic data generation for the Higgs boson decay process to enable more robust statistical analysis in particle physics experiments.
-- Implemented the RealNVP normalizing flow model to generate synthetic data points from latent space, matching the original distribution of Higgs decay data from particle physics experiments.
-- After performing statistical analysis on synthetically generated data, we found that the statistical results closely matched the experimental values, confirming the viability of RealNVP models for data augmentation in scientific research.`,
-        skills: [
-          "Particle Physics",
-          "Synthetic Data Generation",
-          "RealNVP",
-          "Normalizing Flows",
-          "Statistical Analysis",
-          "Deep Learning",
-          "Python",
-          "Scientific Research",
-          "Data Augmentation",
-          "Machine Learning",
         ],
         isExpanded: true,
       },
@@ -222,17 +254,17 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    id: "iiser-pune",
+    id: "glasgow",
     companyName: "University of Glasgow",
     positions: [
       {
         id: "research-assistant",
         title: "Research Assistant",
         employmentPeriod: {
-          start: "01.2022",
-          end: "05.2022",
+          start: "09.2021",
+          end: "10.2021",
         },
-        location: "Scotland",
+        location: "Glasgow, Scotland",
         employmentType: "Internship",
         icon: "code",
         description: `- Worked on a research-oriented project exploring how neural networks can be used to probe Effective Field Theory (EFT) couplings, inspired by the ATLAS experiment and the paper "Parameterized Machine Learning for High-Energy Physics".
