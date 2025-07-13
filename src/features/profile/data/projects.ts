@@ -27,6 +27,33 @@ export const PROJECTS: Project[] = [
     isExpanded: true,
   },
   {
+    id: "transformer-model-implementation-from-scratch",
+    title: "Transformer Model Implementation From Scratch",
+    period: {
+      start: "2024", // You can update this with the actual period
+    },
+    link: "https://github.com/ish-codes-magic/transformer_from_scratch", // Add GitHub link here when available
+    skills: [
+      "Python",
+      "PyTorch",
+      "Computer Vision",
+      "Deep Learning",
+      "Image Classification",
+      "Convolutional Neural Networks",
+      "Transfer Learning",
+      "Model Training",
+      "Model Evaluation",
+    ],
+    description: `Personal project demonstrating my understanding of attention mechanisms and transformer architecture by recreating the Transformer model ("Attention Is All You Need") from scratch using PyTorch.
+- Built a modular encoder-decoder architecture with multi-head attention, positional encoding, and feed-forward layers, adhering closely to the original paper.
+- Designed each component (attention, layer norm, embeddings, etc.) as separate modules for clarity and flexibility.
+- Implemented a full training pipeline for English-to-French translation using the OPUS Books dataset, with masking, label smoothing, and BLEU score evaluation.
+- Integrated advanced training techniques such as learning rate scheduling, dropout regularization, and Adam optimizer with weight decay.
+- Used HuggingFace tokenizers for text preprocessing and sequence handling, ensuring vocabulary management and consistent batching.
+- Demonstrated ability to work with neural network layers, data loaders, optimizers, and attention mechanism directly in PyTorch.`,
+    isExpanded: true,
+  },
+  {
     id: "alexnet-implementation-from-scratch",
     title: "AlexNet Implementation From Scratch",
     period: {
