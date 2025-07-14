@@ -2,16 +2,22 @@ import type { SocialLink } from "../types/social-links";
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    icon: "https://assets.chanhdai.com/images/link-icons/linkedin.webp",
+    icon: "https://assets.ishita-codes-ai.in/images/link-icons/linkedin.png",
     title: "LinkedIn",
     description: "ishita",
     href: "https://www.linkedin.com/in/ishta-pal/",
   },
   {
-    icon: "https://assets.chanhdai.com/images/link-icons/github.webp",
+    icon: "https://assets.ishita-codes-ai.in/images/link-icons/github.png",
     title: "GitHub",
     description: "ish-codes-magic",
     href: "https://github.com/ish-codes-magic",
+  },
+  {
+    icon: "https://assets.ishita-codes-ai.in/images/link-icons/leetcode.png",
+    title: "LeetCode",
+    description: "ishita_in_data",
+    href: "https://leetcode.com/u/ishita_in_data/",
   },
   // {
   //   icon: "https://assets.chanhdai.com/images/link-icons/dailydev.webp",

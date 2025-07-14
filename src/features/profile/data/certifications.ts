@@ -4,7 +4,8 @@ export const CERTIFICATIONS: Certification[] = [
   {
     title: "AI Trailblazer",
     issuer: "Verix",
-    issuerLogoURL: "https://assets.chanhdai.com/images/companies/verix.webp",
+    issuerLogoURL:
+      "https://assets.ishita-codes-ai.in/images/companies/verix.webp",
     issueDate: "2025-05-14",
     credentialID: "seo-47463-1745634751873",
     credentialURL:
@@ -13,7 +14,8 @@ export const CERTIFICATIONS: Certification[] = [
   {
     title: "Neural Networks and Deep Learning",
     issuer: "Coursera",
-    issuerLogoURL: "https://assets.chanhdai.com/images/companies/coursera.webp",
+    issuerLogoURL:
+      "https://assets.ishita-codes-ai.in/images/companies/coursera.webp",
     issueDate: "2021-04-03",
     credentialID: "543682",
     credentialURL:
