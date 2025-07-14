@@ -52,7 +52,7 @@ function ChanhDaiMarkMotion() {
       transition={{ duration: 0.3 }}
     >
       <path
-        d="M192 256H64v-64h128v64ZM448 64H320v128h128v64H256V0h192v64ZM64 192H0V64h64v128ZM512 192h-64V64h64v128ZM192 64H64V0h128v64Z"
+        d="M160 32H352v32H288v160h64v32H160v-32h64V64h-64V32Z"
         fill="currentColor"
       />
     </motion.svg>
