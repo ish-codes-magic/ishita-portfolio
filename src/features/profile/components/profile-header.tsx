@@ -24,11 +24,25 @@ export function ProfileHeader() {
           viewBox="0 0 30 20"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect width="30" height="20" fill="#F00" />
-          <polygon
-            points="15,4 11.47,14.85 20.71,8.15 9.29,8.15 18.53,14.85"
-            fill="#FFEB00"
-          />
+          <rect width="30" height="6.67" fill="#FF9933" />
+          <rect y="6.67" width="30" height="6.67" fill="#FFFFFF" />
+          <rect y="13.33" width="30" height="6.67" fill="#138808" />
+          <circle cx="15" cy="10" r="2.5" fill="#000080" />
+          <circle cx="15" cy="10" r="2.3" fill="#FFFFFF" />
+          <circle cx="15" cy="10" r="0.8" fill="#000080" />
+          <g fill="#000080">
+            {[...Array(24)].map((_, i) => (
+              <line
+                key={i}
+                x1="15"
+                y1="10"
+                x2={15 + 2.3 * Math.cos((i * 15 * Math.PI) / 180)}
+                y2={10 + 2.3 * Math.sin((i * 15 * Math.PI) / 180)}
+                strokeWidth="0.2"
+                stroke="#000080"
+              />
+            ))}
+          </g>
         </svg>
       </div>
 
