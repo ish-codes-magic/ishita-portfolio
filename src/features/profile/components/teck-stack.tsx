@@ -35,7 +35,7 @@ export function TeckStack() {
                     {tech.theme ? (
                       <>
                         <Image
-                          src={`https://github.com/ish-codes-magic/ishita-portfolio/blob/main/icons/${tech.key}-Light.svg`}
+                          src={`https://assets.ishita-codes-ai.in/images/link-icons/${tech.key}-Light.svg`}
                           alt={`${tech.title} light icon`}
                           width={32}
                           height={32}
@@ -43,7 +43,7 @@ export function TeckStack() {
                           unoptimized
                         />
                         <Image
-                          src={`https://github.com/ish-codes-magic/ishita-portfolio/blob/main/icons/${tech.key}-Dark.svg`}
+                          src={`https://assets.ishita-codes-ai.in/images/link-icons/${tech.key}-Dark.svg`}
                           alt={`${tech.title} dark icon`}
                           width={32}
                           height={32}
@@ -53,7 +53,7 @@ export function TeckStack() {
                       </>
                     ) : (
                       <Image
-                        src={`https://github.com/ish-codes-magic/ishita-portfolio/blob/main/icons/${tech.key}.svg`}
+                        src={`https://assets.ishita-codes-ai.in/images/link-icons/${tech.key}.svg`}
                         alt={`${tech.title} icon`}
                         width={32}
                         height={32}
