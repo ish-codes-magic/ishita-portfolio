@@ -13,7 +13,7 @@ export function ProfileCover() {
         )}
       >
         <img
-          src="https://assets.ishita-codes-ai.in/images/profile_cover.png"
+          src="https://assets.ishita-codes-ai.in/images/profile-cover.png"
           alt="Profile Cover"
           className="h-full w-full object-cover"
         />
