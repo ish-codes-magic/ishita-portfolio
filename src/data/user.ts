@@ -13,7 +13,7 @@ export const USER = {
   address: "Hyderabad, India",
   phoneNumber: "ODI1NzAyMjc2Mg", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
   email: "aXNoaXRhcGFsMzE0MUBnbWFpbC5jb20=", // base64 encoded
-  website: "https://ishita-portfolio-seven.vercel.app/",
+  website: "https://ishita-codes-ai.in/",
   otherWebsites: [
     // "https://dai.ng",
     // "https://dai.so",
@@ -57,18 +57,24 @@ export const USER = {
     },
   ],
   about: `
-Hello, World! I am Chánh Đại — a Software Developer & UI/UX Designer passionate about creating high-performance, user-centric software solutions with intuitive and engaging designs.
+I'm an AI engineer with 3+ years of industry experience building robust, scalable, and intelligent systems at the intersection of machine learning, software engineering, and AI safety. My work spans the development of production-ready ML pipelines, large language model (LLM) applications, and scalable cloud infrastructure.
 
-With 5+ years of experience, I specialize in building high-quality web and mobile applications using Next.js, React, TypeScript, and modern front-end technologies. Beyond work, I love exploring new technologies and turning ideas into reality through personal projects.
+I currently work at Storefox.ai, where I lead the development of audio intelligence systems that convert raw retail conversations into actionable business insights using custom-built pipelines, robust LLM evaluations, and implementing best engineering practices. My contributions have not only driven measurable improvements in accuracy and efficiency, but also shaped product direction through client collaboration and team leadership.
 
-One of my key projects, [ZaDark](https://zadark.com), enhances the Zalo experience on PC and Web, surpassing 80,000 downloads on [SourceForge](https://sourceforge.net/projects/zadark) and 15,000 active users on the [Chrome Web Store](https://chromewebstore.google.com/detail/llfhpkkeljlgnjgkholeppfnepmjppob) since 2022.
+Previously, I built LLM-driven platforms for hiring and chatbots for real estate sector at Hashkraft, developed face recognition systems at scale with Coriolis Technologies, and contributed to scientific ML research at institutes like CERN, DESY, and IISER Pune. I’ve worked across diverse domains—computer vision, NLP, anomaly detection, and particle physics—always focusing on applying AI in meaningful, interpretable, and responsible ways.
+
+I'm also passionate about AI safety and alignment, having participated in the Whitebox Research AI Safety Fellowship, where I explored concepts in interpretability and worked on evaluating the unfaithfulness of chain-of-thought reasoning in LLMs.
+
+My tech stack includes tools like Python, PyTorch, FastAPI, Docker, Kubernetes, and AWS, along with modern AI-focused platforms such as Portkey, Instructor, Claude, and ChatGPT. Whether it’s deploying deep learning models at scale, building RAG pipelines with vector DBs, or improving system reliability with tools like Ansible and Kafka, I enjoy working across the full stack to turn research into impact.
 
 Let's connect and collaborate!
   `,
-  avatar: "https://assets.chanhdai.com/images/chanhdai-avatar-ghibli.jpeg",
-  avatarWebp: "https://assets.chanhdai.com/images/chanhdai-avatar-ghibli.webp",
-  ogImage: "https://assets.chanhdai.com/images/screenshot-og-image-dark.png",
+  avatar: "https://assets.ishita-codes-ai.in/images/ishita-avatar-ghibli.jpg",
+  avatarWebp:
+    "https://assets.ishita-codes-ai.in/images/ishita-avatar-ghibli.webp",
+  ogImage:
+    "https://assets.ishita-codes-ai.in/images/screenshot-og-image-dark.png",
   keywords:
-    "ncdai, nguyenchanhdai, nguyen chanh dai, chanhdai, chanh dai, iamncdai, quaric, zadark, nguyễn chánh đại, chánh đại",
+    "ishita, ishita pal, AI, AI safety, AI alignment, AI research, Founding Engineer, AI lead",
   dateCreated: "2025-07-05", // YYYY-MM-DD
 };
