@@ -54,10 +54,9 @@ export function ProfileHeader() {
           )}
         >
           <div className="line-clamp-1 font-mono text-xs text-zinc-300 select-none max-sm:hidden dark:text-zinc-800">
-            {"text-3xl "}
-            <span className="inline dark:hidden">text-zinc-950</span>
-            <span className="hidden dark:inline">text-zinc-50</span>
-            {" font-medium"}
+            {" "}
+            {/* <span className="inline dark:hidden">text-zinc-950</span> */}
+            {/* <span className="hidden dark:inline">text-zinc-50</span> */}{" "}
           </div>
         </div>
 
