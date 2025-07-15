@@ -278,8 +278,8 @@ export const EXPERIENCES: Experience[] = [
         employmentType: "Freelance",
         icon: "code",
         description: `- Contributed to improving automation of client servicing tasks by streamlining API-based operations via the chatbot interface.
-        - Designed and developed an agentic chatbot capable of understanding complex user queries and executing appropriate actions autonomously.
-        - Integrated the chatbot with Genmark.ai's internal APIs, enabling real-time interaction and dynamic response generation based on API specifications.`,
+- Designed and developed an agentic chatbot capable of understanding complex user queries and executing appropriate actions autonomously.
+- Integrated the chatbot with Genmark.ai's internal APIs, enabling real-time interaction and dynamic response generation based on API specifications.`,
         skills: [
           "Agentic AI",
           "LLMs",
