@@ -5,9 +5,9 @@ ishita-codes-ai.in is my minimal portfolio website, showcasing my work and exper
 Check out the live site: [ishita-codes-ai.in](https://ishita-codes-ai.in)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://assets.chanhdai.com/images/screenshot-desktop-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://assets.chanhdai.com/images/screenshot-desktop-light.png">
-  <img src="https://assets.chanhdai.com/images/screenshot-desktop-light.png" alt="Screenshot">
+  <source media="(prefers-color-scheme: dark)" srcset="https://assets.ishita-codes-ai.in/images/screenshot-desktop-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://assets.ishita-codes-ai.in/images/screenshot-desktop-light.png">
+  <img src="https://assets.ishita-codes-ai.in/images/screenshot-desktop-light.png" alt="Screenshot">
 </picture>
 
 ## Overview
