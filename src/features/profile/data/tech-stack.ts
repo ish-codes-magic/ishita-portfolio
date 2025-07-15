@@ -117,12 +117,12 @@ export const TECH_STACK: TechStack[] = [
     href: "https://www.cursor.com/",
     categories: ["AI"],
   },
-  {
-    key: "ansible",
-    title: "Ansible",
-    href: "https://www.ansible.com/",
-    categories: ["Automation"],
-  },
+  // {
+  //   key: "ansible",
+  //   title: "Ansible",
+  //   href: "https://www.ansible.com/",
+  //   categories: ["Automation"],
+  // },
   {
     key: "fastapi",
     title: "FastAPI",
