@@ -32,34 +32,13 @@ export function TeckStack() {
                     rel="noopener noreferrer"
                     aria-label={tech.title}
                   >
-                    {tech.theme ? (
-                      <>
-                        <Image
-                          src={`https://assets.ishita-codes-ai.in/images/link-icons/${tech.key}-Light.svg`}
-                          alt={`${tech.title} light icon`}
-                          width={32}
-                          height={32}
-                          className="hidden [html.light_&]:block"
-                          unoptimized
-                        />
-                        <Image
-                          src={`https://assets.ishita-codes-ai.in/images/link-icons/${tech.key}-Dark.svg`}
-                          alt={`${tech.title} dark icon`}
-                          width={32}
-                          height={32}
-                          className="hidden [html.dark_&]:block"
-                          unoptimized
-                        />
-                      </>
-                    ) : (
-                      <Image
-                        src={`https://assets.ishita-codes-ai.in/images/link-icons/${tech.key}.svg`}
-                        alt={`${tech.title} icon`}
-                        width={32}
-                        height={32}
-                        unoptimized
-                      />
-                    )}
+                    <Image
+                      src={`https://assets.ishita-codes-ai.in/images/link-icons/${tech.key}.svg`}
+                      alt={`${tech.title} icon`}
+                      width={32}
+                      height={32}
+                      unoptimized
+                    />
                     <span className="sr-only">{tech.title}</span>
                   </a>
                 </SimpleTooltip>
