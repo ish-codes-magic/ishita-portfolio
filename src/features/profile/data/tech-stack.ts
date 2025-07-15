@@ -104,13 +104,13 @@ export const TECH_STACK: TechStack[] = [
     href: "https://www.instructor.ai/",
     categories: ["AI"],
   },
-  {
-    key: "portkey",
-    title: "Portkey",
-    href: "https://portkey.ai/",
-    categories: ["AI"],
-    theme: true,
-  },
+  // {
+  //   key: "portkey",
+  //   title: "Portkey",
+  //   href: "https://portkey.ai/",
+  //   categories: ["AI"],
+  //   theme: true,
+  // },
   {
     key: "cursor",
     title: "Cursor",
@@ -135,13 +135,13 @@ export const TECH_STACK: TechStack[] = [
     href: "https://flask.palletsprojects.com/",
     categories: ["Framework"],
   },
-  {
-    key: "sagemaker",
-    title: "SageMaker",
-    href: "https://aws.amazon.com/sagemaker/",
-    categories: ["AI"],
-    theme: true,
-  },
+  // {
+  //   key: "sagemaker",
+  //   title: "SageMaker",
+  //   href: "https://aws.amazon.com/sagemaker/",
+  //   categories: ["AI"],
+  //   theme: true,
+  // },
   {
     key: "latex",
     title: "LaTeX",
@@ -197,13 +197,13 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Tools"],
     theme: true,
   },
-  {
-    key: "vercel",
-    title: "Vercel",
-    href: "https://vercel.com/",
-    categories: ["Tools"],
-    theme: true,
-  },
+  // {
+  //   key: "vercel",
+  //   title: "Vercel",
+  //   href: "https://vercel.com/",
+  //   categories: ["Tools"],
+  //   theme: true,
+  // },
   // {
   //   key: "zalo-mini-app",
   //   title: "Zalo Mini App",
