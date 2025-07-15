@@ -68,15 +68,15 @@ export const EXPERIENCES: Experience[] = [
         employmentType: "Full-time",
         icon: "code",
         description: `- Developed a scalable AI-driven hiring platform that streamlined candidate evaluation, matching, and communication, with an estimated 50% reduction in hiring time through automation and intelligent retrieval.
-        - Leveraged cutting-edge LLMs (GPT-4) alongside Retrieval-Augmented Generation (RAG) pipelines using LangChain, integrating with Chroma vector database to enable real-time semantic candidate-job matching.
-        - Conducted detailed benchmarking and evaluations of different LLM configurations, embeddings, and RAG architectures to optimize cost, latency, and accuracy.
-        - Led the design and deployment of an AI-based real estate chatbot, allowing users to search, query, and retrieve property listings using natural language.
-        - Utilized GPT-4 for conversational context handling and Elasticsearch for fast and accurate property data retrieval across diverse queries.
-        - Designed the entire system architecture, ensuring efficient state management, query parsing, and document retrieval, resulting in highly responsive and accurate user interactions.
-        - Deployed the chatbot to production using AWS services (EC2, S3, Lambda), ensuring scalability, security, and uptime.
-        - Managed and mentored a team of two interns, overseeing their project pipelines, providing code reviews, and ensuring timely deliverables aligned with business goals.
-        - Set up project tracking, documentation workflows, and weekly syncs, improving team collaboration and technical output.
-        - Drove cross-functional collaboration between backend, frontend, and product teams to ensure seamless integration and user experience.`,
+- Leveraged cutting-edge LLMs (GPT-4) alongside Retrieval-Augmented Generation (RAG) pipelines using LangChain, integrating with Chroma vector database to enable real-time semantic candidate-job matching.
+- Conducted detailed benchmarking and evaluations of different LLM configurations, embeddings, and RAG architectures to optimize cost, latency, and accuracy.
+- Led the design and deployment of an AI-based real estate chatbot, allowing users to search, query, and retrieve property listings using natural language.
+- Utilized GPT-4 for conversational context handling and Elasticsearch for fast and accurate property data retrieval across diverse queries.
+- Designed the entire system architecture, ensuring efficient state management, query parsing, and document retrieval, resulting in highly responsive and accurate user interactions.
+- Deployed the chatbot to production using AWS services (EC2, S3, Lambda), ensuring scalability, security, and uptime.
+- Managed and mentored a team of two interns, overseeing their project pipelines, providing code reviews, and ensuring timely deliverables aligned with business goals.
+- Set up project tracking, documentation workflows, and weekly syncs, improving team collaboration and technical output.
+- Drove cross-functional collaboration between backend, frontend, and product teams to ensure seamless integration and user experience.`,
         skills: [
           "LLMs",
           "GPT/Gemini models",
