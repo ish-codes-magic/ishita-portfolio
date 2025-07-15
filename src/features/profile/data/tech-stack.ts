@@ -20,8 +20,8 @@ export const TECH_STACK: TechStack[] = [
     categories: ["Cloud"],
   },
   {
-    key: "git",
-    title: "Git",
+    key: "github",
+    title: "GitHub",
     href: "https://git-scm.com/",
     categories: ["Version Control"],
   },
@@ -112,13 +112,6 @@ export const TECH_STACK: TechStack[] = [
     theme: true,
   },
   {
-    key: "inspect",
-    title: "Inspect",
-    href: "https://inspect.ai/",
-    categories: ["AI"],
-    theme: true,
-  },
-  {
     key: "cursor",
     title: "Cursor",
     href: "https://www.cursor.com/",
@@ -155,7 +148,7 @@ export const TECH_STACK: TechStack[] = [
     href: "https://www.latex-project.org/",
     categories: ["Tools"],
   },
-  
+
   {
     key: "claude",
     title: "Claude",
@@ -167,6 +160,48 @@ export const TECH_STACK: TechStack[] = [
     title: "ChatGPT",
     href: "https://chatgpt.com/",
     categories: ["Tools", "AI"],
+    theme: true,
+  },
+  {
+    key: "gemini",
+    title: "Gemini",
+    href: "https://gemini.google.com/",
+    categories: ["Tools", "AI"],
+    theme: true,
+  },
+  {
+    key: "html",
+    title: "HTML",
+    href: "https://html.com/",
+    categories: ["Tools"],
+    theme: true,
+  },
+  {
+    key: "css",
+    title: "CSS",
+    href: "https://css.com/",
+    categories: ["Tools"],
+    theme: true,
+  },
+  {
+    key: "javascript",
+    title: "JavaScript",
+    href: "https://javascript.com/",
+    categories: ["Tools"],
+    theme: true,
+  },
+  {
+    key: "typescript",
+    title: "TypeScript",
+    href: "https://www.typescriptlang.org/",
+    categories: ["Tools"],
+    theme: true,
+  },
+  {
+    key: "vercel",
+    title: "Vercel",
+    href: "https://vercel.com/",
+    categories: ["Tools"],
     theme: true,
   },
   // {
