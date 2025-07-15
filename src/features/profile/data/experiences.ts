@@ -4,7 +4,8 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "storefox",
     companyName: "Storefox.ai",
-    companyLogo: "https://assets.chanhdai.com/images/companies/storefox.webp",
+    companyLogo:
+      "https://assets.ishita-codes-ai.in/images/companies/storefox.jpg",
     positions: [
       {
         id: "founding-ai-engineer",
@@ -53,10 +54,12 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "hashkraft",
     companyName: "Hashkraft",
+    companyLogo:
+      "https://assets.ishita-codes-ai.in/images/companies/hashkraft.svg",
     positions: [
       {
-        id: "lead-data-scientist",
-        title: "Lead Data Scientist",
+        id: "lead-ai-researcher",
+        title: "Lead AI Researcher",
         employmentPeriod: {
           start: "06.2023",
           end: "06.2024",
@@ -64,12 +67,16 @@ export const EXPERIENCES: Experience[] = [
         location: "Hyderabad, India",
         employmentType: "Full-time",
         icon: "code",
-        description: `- Developed an automated hiring platform using LLMs (like GPT-4), RAG technologies (like Langchain), and vector databases (like Chroma), cutting down hiring time by 90%
-- Implemented Zoom API integration for scheduling interviews and utilised Assembly AI and Claude 2 LLM to analyse interview transcripts, generating valuable insights for recruiters, significantly aiding in decision-making for hiring.
-- Designed, architected and led the development of the real estate chatbot project from scratch, showcasing strong architectural and design skills.
-- Employed a combination of GPT-4 and Elasticsearch for accurate property search responses and integrated Scrapy for dynamic web content extraction.
-- Spearheaded deployment on AWS using EC2, S3, EFS and Docker, demonstrating proficiency in cloud computing.
-- Managed a team of two interns, highlighting leadership and project management capabilities, utilizing tools like GitHub and Jira for workflow management.`,
+        description: `- Developed a scalable AI-driven hiring platform that streamlined candidate evaluation, matching, and communication, with an estimated 50% reduction in hiring time through automation and intelligent retrieval.
+        - Leveraged cutting-edge LLMs (GPT-4) alongside Retrieval-Augmented Generation (RAG) pipelines using LangChain, integrating with Chroma vector database to enable real-time semantic candidate-job matching.
+        - Conducted detailed benchmarking and evaluations of different LLM configurations, embeddings, and RAG architectures to optimize cost, latency, and accuracy.
+        - Led the design and deployment of an AI-based real estate chatbot, allowing users to search, query, and retrieve property listings using natural language.
+        - Utilized GPT-4 for conversational context handling and Elasticsearch for fast and accurate property data retrieval across diverse queries.
+        - Designed the entire system architecture, ensuring efficient state management, query parsing, and document retrieval, resulting in highly responsive and accurate user interactions.
+        - Deployed the chatbot to production using AWS services (EC2, S3, Lambda), ensuring scalability, security, and uptime.
+        - Managed and mentored a team of two interns, overseeing their project pipelines, providing code reviews, and ensuring timely deliverables aligned with business goals.
+        - Set up project tracking, documentation workflows, and weekly syncs, improving team collaboration and technical output.
+        - Drove cross-functional collaboration between backend, frontend, and product teams to ensure seamless integration and user experience.`,
         skills: [
           "LLMs",
           "GPT/Gemini models",
@@ -98,10 +105,12 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "coriolis",
     companyName: "Coriolis Technologies",
+    companyLogo:
+      "https://assets.ishita-codes-ai.in/images/companies/coriolis.webp",
     positions: [
       {
-        id: "data-science-intern",
-        title: "Data Science Intern",
+        id: "computer-vision-research-intern",
+        title: "Computer Vision Research Intern",
         employmentPeriod: {
           start: "07.2022",
           end: "06.2023",
@@ -110,11 +119,11 @@ export const EXPERIENCES: Experience[] = [
         employmentType: "Internship",
         icon: "code",
         description: `- Developed an AI based surveillance software with a team of about 5-6 people.
-- Deployed on scale face recognition algorithms with an accuracy of 75% on Spark.
-- Optimised object detection on spark increasing processing speed from 16 to 30 frames/s.
-- Improved the loading time of the UI reducing it from 1-2 minutes to 15 seconds.
-- Developed a scalable and fault-tolerant system that can process 60 million images per day by deploying it on Kubernetes.
-- Automated the entire process of setting up our Kubernetes cluster using Ansible, reducing the deployment time from 3 hours to 15 minutes.
+- Deployed on scale face recognition algorithms with an accuracy of **75%** on Spark.
+- Optimised object detection on spark increasing processing speed from **16 to 30 frames/s**.
+- Improved the loading time of the UI reducing it from **1-2 minutes to 15 seconds**.
+- Developed a scalable and fault-tolerant system that can process **60 million images per day** by deploying it on Kubernetes.
+- Automated the entire process of setting up our Kubernetes cluster using Ansible, reducing the deployment time from **3 hours to 15 minutes**.
 - Managed a team of 7 full time interns working on 4 different projects, overseeing their onboarding and mentoring, increasing the productivity of the entire team by 13%.`,
         skills: [
           "Computer Vision",
@@ -147,6 +156,7 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "cern",
     companyName: "Conseil européen pour la Recherche Nucléaire (CERN)",
+    companyLogo: "https://assets.ishita-codes-ai.in/images/companies/cern.png",
     positions: [
       {
         id: "research-assistant",
@@ -248,6 +258,37 @@ export const EXPERIENCES: Experience[] = [
           "Data Science",
           "Data Preprocessing",
           "Statistical Analysis",
+        ],
+        isExpanded: true,
+      },
+    ],
+  },
+  {
+    id: "genmark",
+    companyName: "Genmark.ai",
+    positions: [
+      {
+        id: "ai-consultant",
+        title: "AI Consultant",
+        employmentPeriod: {
+          start: "09.2021",
+          end: "10.2021",
+        },
+        location: "Delaware, USA",
+        employmentType: "Freelance",
+        icon: "code",
+        description: `- Contributed to improving automation of client servicing tasks by streamlining API-based operations via the chatbot interface.
+        - Designed and developed an agentic chatbot capable of understanding complex user queries and executing appropriate actions autonomously.
+        - Integrated the chatbot with Genmark.ai's internal APIs, enabling real-time interaction and dynamic response generation based on API specifications.`,
+        skills: [
+          "Agentic AI",
+          "LLMs",
+          "Python",
+          "Flask",
+          "Firebase",
+          "GCP",
+          "API design",
+          "Prompt Engineering",
         ],
         isExpanded: true,
       },
