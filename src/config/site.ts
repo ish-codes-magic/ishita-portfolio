@@ -19,10 +19,10 @@ export const MAIN_NAV: NavItem[] = [
     title: "Portfolio",
     href: "/",
   },
-  {
-    title: "Blog",
-    href: "/blog",
-  },
+  // {
+  //   title: "Blog",
+  //   href: "/blog",
+  // },
   // {
   //   title: "AI Safety",
   //   href: "/components",

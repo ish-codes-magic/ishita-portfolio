@@ -9,7 +9,7 @@ import {
   // DownloadIcon,
   LetterTextIcon,
   MoonStarIcon,
-  RssIcon,
+  // RssIcon,
   SunIcon,
   TextIcon,
   // TriangleDashedIcon,
@@ -56,16 +56,16 @@ const MENU_LINKS: CommandLinkItem[] = [
     href: "/",
     icon: ChanhDaiMark,
   },
-  {
-    title: "Blog",
-    href: "/blog",
-    icon: RssIcon,
-  },
-  {
-    title: "AI Safety",
-    href: "/components",
-    icon: Icons.react,
-  },
+  // {
+  //   title: "Blog",
+  //   href: "/blog",
+  //   icon: RssIcon,
+  // },
+  // {
+  //   title: "AI Safety",
+  //   href: "/components",
+  //   icon: Icons.react,
+  // },
 ];
 
 const PORTFOLIO_LINKS: CommandLinkItem[] = [
