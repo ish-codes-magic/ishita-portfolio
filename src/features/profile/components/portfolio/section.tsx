@@ -1,4 +1,4 @@
-import { ChevronDownIcon } from "lucide-react";
+import { ArrowUpRightIcon, ChevronDownIcon } from "lucide-react";
 import type { ReactNode } from "react";
 
 import { Markdown } from "@/components/markdown";
@@ -14,7 +14,7 @@ export function PortfolioSection({
   id: string;
   eyebrow: string;
   title: string;
-  description?: string;
+  description?: ReactNode;
   children: ReactNode;
 }) {
   return (
@@ -28,13 +28,46 @@ export function PortfolioSection({
           {title}
         </h2>
         {description && (
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            {description}
-          </p>
+          <div className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
+            {typeof description === "string" ? (
+              <p>{description}</p>
+            ) : (
+              description
+            )}
+          </div>
         )}
       </div>
       {children}
     </section>
+  );
+}
+
+export function PortfolioLinks({
+  links = [],
+}: {
+  links?: { label: string; href: string }[];
+}) {
+  if (!links.length) return null;
+
+  return (
+    <ul className="flex flex-wrap gap-x-5 gap-y-2">
+      {links.map((link) => (
+        <li key={link.href}>
+          <a
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-10 items-center gap-1.5 rounded-sm text-sm font-medium text-primary underline-offset-4 hover:underline"
+          >
+            {link.label}
+            <ArrowUpRightIcon
+              className="size-3.5 shrink-0"
+              aria-hidden="true"
+            />
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 }
 
