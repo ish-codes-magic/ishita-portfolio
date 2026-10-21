@@ -1,8 +1,20 @@
 import { AWARDS } from "@/features/profile/data/awards";
 
-const content = `# Awards
+function formatAward(item: (typeof AWARDS)[number]) {
+  return `## ${item.prize} | ${item.title}\n\n${item.date.slice(0, 4)}\n\n${item.description}${item.referenceLink ? `\n\nReference: ${item.referenceLink}` : ""}`;
+}
 
-${AWARDS.map((item) => `## ${item.prize} | ${item.title}\n\n${item.description}`).join("\n\n")}
+const content = `# Recognition & Fellowships
+
+${AWARDS.filter((item) => !item.isAcademicDistinction)
+  .map(formatAward)
+  .join("\n\n")}
+
+# Earlier Academic Distinctions
+
+${AWARDS.filter((item) => item.isAcademicDistinction)
+  .map(formatAward)
+  .join("\n\n")}
 `;
 
 export const dynamic = "force-static";

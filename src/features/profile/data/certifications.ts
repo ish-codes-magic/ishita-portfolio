@@ -2,7 +2,15 @@ import type { Certification } from "../types/certifications";
 
 export const CERTIFICATIONS: Certification[] = [
   {
+    title: "Technical AI Safety",
+    issuer: "BlueDot Impact",
+    issueDate: "2026",
+    description:
+      "Training covering technical AI safety research, including alignment, evaluations, interpretability, and other approaches to understanding and mitigating risks from advanced AI systems.",
+  },
+  {
     title: "AI Trailblazer",
+    isAdditional: true,
     issuer: "Verix",
     issuerLogoURL:
       "https://assets.ishita-codes-ai.in/images/companies/verix.webp",
@@ -13,7 +21,9 @@ export const CERTIFICATIONS: Certification[] = [
   },
   {
     title: "Neural Networks and Deep Learning",
-    issuer: "Coursera",
+    issuer: "DeepLearning.AI / Coursera",
+    description:
+      "Foundational deep learning coursework covering neural networks, training methods, and optimization.",
     issuerLogoURL:
       "https://assets.ishita-codes-ai.in/images/companies/coursera.png",
     issueDate: "2021-04-03",
@@ -24,6 +34,7 @@ export const CERTIFICATIONS: Certification[] = [
   {
     title:
       "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning",
+    isAdditional: true,
     issuer: "Coursera",
     issuerLogoURL:
       "https://assets.ishita-codes-ai.in/images/companies/coursera.png",
@@ -34,6 +45,8 @@ export const CERTIFICATIONS: Certification[] = [
   },
   {
     title: "Machine Learning",
+    description:
+      "Foundational machine learning coursework covering supervised learning, model development, and evaluation.",
     issuer: "Coursera",
     issuerLogoURL:
       "https://assets.ishita-codes-ai.in/images/companies/coursera.png",
@@ -44,6 +57,7 @@ export const CERTIFICATIONS: Certification[] = [
   },
   {
     title: "Programming for Everybody (Getting Started with Python)",
+    isAdditional: true,
     issuer: "Coursera",
     issuerLogoURL:
       "https://assets.ishita-codes-ai.in/images/companies/coursera.png",

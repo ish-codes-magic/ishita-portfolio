@@ -1,8 +1,23 @@
 import { CERTIFICATIONS } from "@/features/profile/data/certifications";
 
-const content = `# Certifications
+function formatCertification(item: (typeof CERTIFICATIONS)[number]) {
+  const title = item.credentialURL
+    ? `[${item.title}](${item.credentialURL})`
+    : item.title;
+  return `- ${title} — ${item.issuer}, ${item.issueDate.slice(0, 4)}${item.description ? `\n  ${item.description}` : ""}`;
+}
 
-${CERTIFICATIONS.map((item) => `- [${item.title}](${item.credentialURL})`).join("\n")}
+const content = `# Relevant Training & Certifications
+
+${CERTIFICATIONS.filter((item) => !item.isAdditional)
+  .map(formatCertification)
+  .join("\n")}
+
+## Additional Certifications
+
+${CERTIFICATIONS.filter((item) => item.isAdditional)
+  .map(formatCertification)
+  .join("\n")}
 `;
 
 export const dynamic = "force-static";

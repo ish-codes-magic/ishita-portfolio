@@ -4,6 +4,8 @@ export type Certification = {
   issuerLogoURL?: string;
   issuerIconName?: string;
   issueDate: string;
-  credentialID: string;
-  credentialURL: string;
+  credentialID?: string;
+  credentialURL?: string;
+  description?: string;
+  isAdditional?: boolean;
 };
