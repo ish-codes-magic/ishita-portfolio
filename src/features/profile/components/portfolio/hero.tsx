@@ -58,7 +58,7 @@ export function PortfolioHero() {
           className="portfolio-portrait-backdrop absolute -inset-1 rounded-[2.5rem] sm:-inset-6"
           aria-hidden="true"
         />
-        <figure className="relative overflow-hidden rounded-[1.75rem] border border-border bg-card p-3 shadow-[0_12px_48px_-24px_rgba(23,57,43,0.3)] sm:rotate-2">
+        <figure className="relative overflow-hidden rounded-[1.75rem] border border-border bg-card p-3 shadow-[0_12px_48px_-24px_rgba(92,49,116,0.35)] sm:rotate-2">
           <Image
             src="/images/ishita-avatar-ghibli.jpg"
             alt={`Illustrated portrait of ${USER.firstName} ${USER.lastName}`}

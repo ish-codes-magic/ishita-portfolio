@@ -64,16 +64,18 @@ export function PortfolioProjects() {
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
-      <PortfolioDetails
-        label={`More projects (${PROJECTS.length - 4})`}
-        className="mt-6"
-      >
-        <div className="grid gap-5 md:grid-cols-2">
-          {PROJECTS.slice(4).map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-      </PortfolioDetails>
+      {PROJECTS.length > 4 && (
+        <PortfolioDetails
+          label={`More projects (${PROJECTS.length - 4})`}
+          className="mt-6"
+        >
+          <div className="grid gap-5 md:grid-cols-2">
+            {PROJECTS.slice(4).map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+        </PortfolioDetails>
+      )}
     </PortfolioSection>
   );
 }

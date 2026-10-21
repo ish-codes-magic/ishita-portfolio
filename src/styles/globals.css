@@ -71,56 +71,46 @@
 }
 
 :root {
-  --background: #fafbf7;
+  --background: #fdfaff;
 
-  --foreground: #202e29;
+  --foreground: #2f2238;
 
-  --primary: #32634c;
+  --primary: #7c4d9a;
 
-  /* zinc-50 */
-  --primary-foreground: oklch(0.985 0 0);
+  --primary-foreground: #fffaff;
 
-  /* zinc-100 */
-  --secondary: oklch(0.967 0.001 286.375);
+  --secondary: #f4edf8;
 
-  /* zinc-950 */
-  --secondary-foreground: oklch(0.141 0.005 285.823);
+  --secondary-foreground: #34253e;
 
-  /* zinc-100 */
-  --muted: oklch(0.967 0.001 286.375);
+  --muted: #f7f0f8;
 
-  --muted-foreground: #626f67;
+  --muted-foreground: #716279;
 
-  /* white */
-  --card: oklch(1 0 0);
+  --card: #fffdfd;
 
-  /* zinc-950 */
-  --card-foreground: oklch(0.141 0.005 285.823);
+  --card-foreground: #2f2238;
 
-  /* white */
-  --popover: oklch(1 0 0);
+  --popover: #fffdfd;
 
-  /* zinc-950 */
-  --popover-foreground: oklch(0.141 0.005 285.823);
+  --popover-foreground: #2f2238;
 
-  --popover-border: color-mix(in oklab, var(--color-black) 15%, transparent);
+  --popover-border: #e7dce9;
 
-  --accent: #eaf0e5;
+  --accent: #f6e5f2;
 
-  /* zinc-900 */
-  --accent-foreground: oklch(0.21 0.006 285.885);
+  --accent-foreground: #3c2548;
 
-  --border: #dfe5da;
+  --border: #e7dce9;
 
   /* color-mix */
   --edge: color-mix(in oklab, var(--border) 64%, var(--background));
 
-  /* zinc-200 */
-  --input: oklch(0.92 0.004 286.32);
+  --input: #e7dce9;
 
-  --ring: oklch(0.67 0.17 244.98);
+  --ring: #b268a3;
 
-  --info: oklch(0.67 0.17 244.98);
+  --info: #8d70b7;
 
   /* green-500 */
   --success: oklch(0.723 0.219 149.579);
@@ -128,69 +118,59 @@
   /* red-600 */
   --destructive: oklch(0.577 0.245 27.325);
 
-  /* blue-700 */
-  --link: oklch(0.488 0.243 264.376);
+  --link: #744c9b;
 
-  /* zinc-50 */
-  --code: oklch(0.985 0 0);
+  --code: #f9f3fb;
 
-  /* zinc-950 */
-  --code-foreground: oklch(0.141 0.005 285.823);
+  --code-foreground: #2f2238;
 
-  /* zinc-400 */
-  --code-number: oklch(0.705 0.015 286.067);
+  --code-number: #96879e;
 
-  /* zinc-100 */
-  --code-highlight: oklch(0.967 0.001 286.375);
+  --code-highlight: #f0e4f4;
 
   --shadow-popover: 0 6px 24px rgba(0, 0, 0, 0.25);
 }
 
 .dark {
-  --background: #141d19;
+  --background: #1c1523;
 
-  --foreground: #eaf0e7;
+  --foreground: #f8f0fa;
 
-  --primary: #a5cdb0;
+  --primary: #e0acd9;
 
-  --primary-foreground: #14271c;
+  --primary-foreground: #351832;
 
-  /* zinc-800 */
-  --secondary: oklch(0.274 0.006 286.033);
+  --secondary: #2a2032;
 
-  /* zinc-50 */
-  --secondary-foreground: oklch(0.985 0 0);
+  --secondary-foreground: #f8f0fa;
 
-  /* zinc-800 */
-  --muted: oklch(0.274 0.006 286.033);
+  --muted: #2a2032;
 
-  --muted-foreground: #a8b5ab;
+  --muted-foreground: #baadbf;
 
-  --card: #1b2620;
+  --card: #251c2e;
 
-  /* zinc-50 */
-  --card-foreground: oklch(0.985 0 0);
+  --card-foreground: #f8f0fa;
 
-  /* zinc-900 */
-  --popover: oklch(0.21 0.006 285.885);
+  --popover: #251c2e;
 
-  /* zinc-50 */
-  --popover-foreground: oklch(0.985 0 0);
+  --popover-foreground: #f8f0fa;
 
-  /* zinc-700 */
-  --popover-border: oklch(0.37 0.013 285.805);
+  --popover-border: #49394f;
 
-  --accent: #24372b;
+  --accent: #37233d;
 
-  /* zinc-50 */
-  --accent-foreground: oklch(0.985 0 0);
+  --accent-foreground: #f8f0fa;
 
-  --border: #344239;
+  --border: #49394f;
 
   /* --edge: color-mix(in oklab, var(--border) 64%, var(--background)); */
 
-  /* zinc-800 */
-  --input: oklch(0.274 0.006 286.033);
+  --input: #49394f;
+
+  --ring: #dda4d4;
+
+  --info: #b1a0df;
 
   /* green-500 */
   --success: oklch(0.723 0.219 149.579);
@@ -198,20 +178,15 @@
   /* red-700 */
   --destructive: oklch(0.505 0.213 27.518);
 
-  /* blue-500 */
-  --link: oklch(0.623 0.214 259.815);
+  --link: #d9abe5;
 
-  /* zinc-900 */
-  --code: oklch(0.21 0.006 285.885);
+  --code: #211828;
 
-  /* zinc-50 */
-  --code-foreground: oklch(0.985 0 0);
+  --code-foreground: #f8f0fa;
 
-  /* zinc-500 */
-  --code-number: oklch(0.552 0.016 285.938);
+  --code-number: #9f90a7;
 
-  /* zinc-800 */
-  --code-highlight: oklch(0.274 0.006 286.033);
+  --code-highlight: #31243a;
 
   --shadow-popover: 0 0 24px rgba(0, 0, 0, 0.5);
 }

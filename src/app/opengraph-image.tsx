@@ -17,8 +17,8 @@ export default function OpenGraphImage() {
           width: "100%",
           height: "100%",
           padding: "64px 72px",
-          background: "#fafbf7",
-          color: "#202e29",
+          background: "#fdfaff",
+          color: "#2f2238",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
@@ -30,8 +30,8 @@ export default function OpenGraphImage() {
               width: 68,
               height: 68,
               borderRadius: 20,
-              background: "#32634c",
-              color: "#fafbf7",
+              background: "#7c4d9a",
+              color: "#fffaff",
               fontSize: 34,
             }}
           >
@@ -48,16 +48,16 @@ export default function OpenGraphImage() {
               fontSize: 76,
               letterSpacing: -3,
               lineHeight: 1.1,
-              color: "#32634c",
+              color: "#7c4d9a",
             }}
           >
             you can trust.
           </div>
-          <div style={{ marginTop: 24, fontSize: 26, color: "#626f67" }}>
+          <div style={{ marginTop: 24, fontSize: 26, color: "#716279" }}>
             AI engineering · Safety & alignment · Research
           </div>
         </div>
-        <div style={{ fontSize: 22, color: "#626f67" }}>
+        <div style={{ fontSize: 22, color: "#716279" }}>
           {new URL(USER.website).hostname}
         </div>
       </div>
