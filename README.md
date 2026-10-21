@@ -18,7 +18,7 @@ Open [localhost:1408](http://localhost:1408).
 ## Update content
 
 - Profile and biography: `src/data/user.ts`
-- Experience, AI safety research, projects, awards, certifications, and tools: `src/features/profile/data/`
+- Experience, AI safety research, projects, writing and talks, recognition, training, and grouped expertise: `src/features/profile/data/`
 - Homepage sections: `src/features/profile/components/portfolio/`
 - Site colors and shared styles: `src/styles/globals.css`
 - Portrait: `public/images/ishita-avatar-ghibli.jpg`

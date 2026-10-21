@@ -18,18 +18,22 @@ export function PortfolioContact() {
         id="contact-title"
         className="text-3xl font-medium tracking-tight sm:text-4xl"
       >
-        Let’s build something meaningful.
+        Let’s exchange ideas.
       </h2>
       <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">
-        Have an interesting AI problem, a research idea, or just want to compare
-        notes? I’d love to hear from you.
+        I’m always interested in thoughtful conversations about AI engineering,
+        technical AI safety, model evaluations, and research.
+      </p>
+      <p className="mt-3 max-w-xl text-base leading-relaxed text-muted-foreground">
+        Whether you’re exploring a research question, building an interesting AI
+        system, or working on open-source tools, I’d be glad to connect.
       </p>
       <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-4">
         <a
           href={`mailto:${decodeEmail(USER.email)}`}
           className="portfolio-button"
         >
-          Say hello <ArrowUpRightIcon className="size-4" aria-hidden="true" />
+          Email <ArrowUpRightIcon className="size-4" aria-hidden="true" />
         </a>
         {SOCIAL_LINKS.filter((link) => link.title !== "LeetCode").map(
           (link) => (

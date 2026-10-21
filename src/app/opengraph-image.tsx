@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 import { USER } from "@/data/user";
 
-export const alt = `${USER.displayName} — AI engineer and safety researcher`;
+export const alt = `${USER.displayName} — ${USER.headline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -40,21 +40,22 @@ export default function OpenGraphImage() {
           <div style={{ fontSize: 30 }}>{USER.displayName}</div>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 76, letterSpacing: -3, lineHeight: 1.1 }}>
-            Building AI
+          <div style={{ fontSize: 68, letterSpacing: -2, lineHeight: 1.1 }}>
+            Building AI systems.
           </div>
           <div
             style={{
-              fontSize: 76,
-              letterSpacing: -3,
+              fontSize: 48,
+              letterSpacing: -1,
               lineHeight: 1.1,
+              marginTop: 16,
               color: "#7c4d9a",
             }}
           >
-            you can trust.
+            Studying how to make them safer.
           </div>
           <div style={{ marginTop: 24, fontSize: 26, color: "#716279" }}>
-            AI engineering · Safety & alignment · Research
+            AI engineering · AI safety research · Agent security
           </div>
         </div>
         <div style={{ fontSize: 22, color: "#716279" }}>

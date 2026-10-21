@@ -6,7 +6,6 @@ export const SITE_INFO = {
   url: process.env.APP_URL || "https://ishita-codes-ai.in",
   ogImage: USER.ogImage,
   description: USER.bio,
-  keywords: USER.keywords,
 };
 
 export const META_THEME_COLORS = {
@@ -15,18 +14,14 @@ export const META_THEME_COLORS = {
 };
 
 export const MAIN_NAV: NavItem[] = [
-  {
-    title: "Portfolio",
-    href: "/",
-  },
-  // {
-  //   title: "Blog",
-  //   href: "/blog",
-  // },
-  // {
-  //   title: "AI Safety",
-  //   href: "/components",
-  // },
+  { title: "Home", href: "/#home" },
+  { title: "About", href: "/#about" },
+  { title: "Experience", href: "/#experience" },
+  { title: "Research", href: "/#research" },
+  { title: "Projects", href: "/#projects" },
+  { title: "Writing & Talks", href: "/#writing" },
+  { title: "Recognition", href: "/#recognition" },
+  { title: "Contact", href: "/#contact" },
 ];
 
 export const SOURCE_CODE_GITHUB_URL =

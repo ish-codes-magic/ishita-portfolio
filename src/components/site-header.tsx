@@ -1,14 +1,8 @@
 import Link from "next/link";
 
 import { ToggleTheme } from "@/components/toggle-theme";
+import { MAIN_NAV } from "@/config/site";
 import { USER } from "@/data/user";
-
-const LINKS = [
-  { title: "About", href: "/#about" },
-  { title: "Experience", href: "/#experience" },
-  { title: "Research", href: "/#research" },
-  { title: "Projects", href: "/#projects" },
-];
 
 export function SiteHeader() {
   return (
@@ -19,8 +13,11 @@ export function SiteHeader() {
       >
         Skip to content
       </a>
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-5 py-3 sm:min-h-20 sm:flex-nowrap sm:py-0">
-        <Link href="/" className="flex min-h-11 items-center gap-3 rounded-sm">
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-5 py-3 lg:min-h-20 lg:flex-nowrap lg:py-0">
+        <Link
+          href="/#home"
+          className="flex min-h-11 shrink-0 items-center gap-3 rounded-sm"
+        >
           <span className="flex size-9 items-center justify-center rounded-xl bg-primary font-mono text-sm font-medium text-primary-foreground">
             ip.
           </span>
@@ -30,28 +27,19 @@ export function SiteHeader() {
         </Link>
         <nav
           aria-label="Main navigation"
-          className="order-3 flex w-full items-center justify-between gap-2 border-t border-border pt-2 sm:order-0 sm:w-auto sm:justify-center sm:gap-6 sm:border-0 sm:pt-0 lg:gap-8"
+          className="order-3 no-scrollbar flex w-full min-w-0 items-center gap-5 overflow-x-auto border-t border-border px-1 pt-2 lg:order-none lg:w-auto lg:justify-center lg:gap-4 lg:border-0 lg:pt-0 xl:gap-5"
         >
-          {LINKS.map((link) => (
+          {MAIN_NAV.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className="inline-flex min-h-10 items-center rounded-sm text-xs text-muted-foreground transition-colors hover:text-primary sm:text-sm"
+              className="inline-flex min-h-11 shrink-0 items-center rounded-sm text-xs text-muted-foreground transition-colors hover:text-primary lg:text-sm"
             >
               {link.title}
             </Link>
           ))}
         </nav>
-        <div className="flex items-center gap-2 sm:gap-4">
-          <Link
-            href="/#contact"
-            className="hidden min-h-10 items-center rounded-sm text-sm font-medium text-primary sm:inline-flex"
-          >
-            Let’s talk{" "}
-            <span aria-hidden="true" className="ml-1.5">
-              ↗
-            </span>
-          </Link>
+        <div className="flex shrink-0 items-center">
           <ToggleTheme />
         </div>
       </div>

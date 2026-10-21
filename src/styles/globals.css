@@ -227,7 +227,7 @@
   }
 
   [id] {
-    @apply scroll-mt-32 sm:scroll-mt-24;
+    @apply scroll-mt-36 lg:scroll-mt-24;
   }
 
   :focus-visible {

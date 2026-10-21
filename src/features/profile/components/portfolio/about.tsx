@@ -6,33 +6,34 @@ import {
 } from "lucide-react";
 
 import { USER } from "@/data/user";
+import { EXPERTISE_GROUPS } from "@/features/profile/data/expertise";
 import { SOCIAL_LINKS } from "@/features/profile/data/social-links";
-import { TECH_STACK } from "@/features/profile/data/tech-stack";
 
 import {
   PortfolioDetails,
   PortfolioMarkdown,
   PortfolioSection,
+  SkillTags,
 } from "./section";
 
 const FOCUS_AREAS = [
   {
     icon: BracesIcon,
-    title: "AI in production",
+    title: "Production AI Engineering",
     description:
-      "LLM applications, audio intelligence, and reliable systems that solve real-world problems.",
+      "Designing, evaluating, and deploying scalable multimodal LLM systems under real-world constraints.",
   },
   {
     icon: ShieldCheckIcon,
-    title: "Safety & alignment",
+    title: "Technical AI Safety Research",
     description:
-      "Model evaluations, interpretability, and understanding when AI reasoning can be trusted.",
+      "Investigating AI control, agent security, model misalignment, reasoning faithfulness, and behavioral evaluations.",
   },
   {
     icon: FlaskConicalIcon,
-    title: "Research-led engineering",
+    title: "Research-Led Engineering",
     description:
-      "Bringing scientific curiosity to machine learning, from particle physics to multimodal models.",
+      "Combining scientific experimentation, quantitative analysis, and practical software engineering to understand and improve AI systems.",
   },
 ];
 
@@ -48,13 +49,13 @@ export function PortfolioAbout() {
       <div className="grid gap-8 lg:grid-cols-[1.25fr_1fr] lg:gap-16">
         <div>
           <div className="space-y-4 text-base leading-8 text-muted-foreground">
-            {paragraphs.slice(0, 2).map((paragraph) => (
+            {paragraphs.slice(0, 3).map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
           <PortfolioDetails label="More about my background" className="mt-3">
             <PortfolioMarkdown>
-              {paragraphs.slice(2).join("\n\n")}
+              {paragraphs.slice(3).join("\n\n")}
             </PortfolioMarkdown>
           </PortfolioDetails>
           <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3">
@@ -89,21 +90,18 @@ export function PortfolioAbout() {
         </div>
       </div>
       <div className="mt-10 border-t border-border pt-7">
-        <h3 className="portfolio-eyebrow mb-4">Tools I work with</h3>
-        <ul className="flex flex-wrap gap-2.5" aria-label="Tech stack">
-          {TECH_STACK.map((tech) => (
-            <li key={tech.key}>
-              <a
-                href={tech.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex min-h-10 items-center rounded-lg border border-border bg-card px-3 text-sm text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary"
-              >
-                {tech.title}
-              </a>
-            </li>
+        <h3 className="portfolio-eyebrow mb-5">Areas of expertise</h3>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {EXPERTISE_GROUPS.map((group) => (
+            <div
+              key={group.title}
+              className="rounded-xl border border-border bg-card p-5"
+            >
+              <h4 className="mb-4 font-medium">{group.title}</h4>
+              <SkillTags skills={group.skills} />
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </PortfolioSection>
   );

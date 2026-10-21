@@ -4,7 +4,17 @@ export const USER = {
   displayName: "Ishita Pal",
   username: "butterfly-ish",
   gender: "woman",
-  bio: "Driven to make AI safe, reliable, and accessible to all.",
+  headline: "Founding AI Engineer & AI Safety Researcher",
+  bio: "Ishita Pal is a Founding Engineer and AI Lead at Storefox.ai, working on multimodal LLM systems, AI safety research, agent security, AI control, and model evaluations.",
+  researchInterests: [
+    "AI Control",
+    "Agent Security",
+    "LLM Evaluations",
+    "Model Organisms",
+    "Chain-of-Thought Faithfulness",
+    "Multimodal AI",
+    "Continuous Threat Modeling",
+  ],
   flipSentences: [
     "AI Researcher",
     "AI Safety Engineer",
@@ -36,43 +46,41 @@ export const USER = {
       website: "https://storefox.ai",
     },
     {
-      title: "AI Researcher",
+      title: "Lead Data Scientist",
       company: "Hashkraft",
       website: "https://hashkraft.com/",
     },
     {
-      title: "Computer Vision Research Intern",
-      company: "Coriolis",
+      title: "Member of Technical Staff, Intern",
+      company: "Coriolis Technologies",
       website: "https://www.coriolis.co.in/",
     },
     {
-      title: "Research Intern",
-      company: "Conseil Européen pour la Recherche Nucléaire(CERN), France",
+      title: "Undergraduate Researcher",
+      company: "CERN",
       website: "https://home.cern/",
     },
     {
-      title: "Research Intern",
+      title: "Summer Research Intern",
       company: "DESY",
       website: "https://desy.de/index_eng.html",
     },
   ],
   about: `
-I'm an AI engineer with 3+ years of industry experience building robust, scalable, and intelligent systems at the intersection of machine learning, software engineering, and AI safety. My work spans the development of production-ready ML pipelines, large language model (LLM) applications, and scalable cloud infrastructure.
+I'm a Founding Engineer and AI Lead at Storefox.ai, where I lead the development of production multimodal AI systems that transform noisy retail audio into actionable business intelligence.
 
-I currently work at Storefox.ai, where I lead the development of audio intelligence systems that convert raw retail conversations into actionable business insights using custom-built pipelines, robust LLM evaluations, and implementing best engineering practices. My contributions have not only driven measurable improvements in accuracy and efficiency, but also shaped product direction through client collaboration and team leadership.
+My engineering work spans speech processing, large language models, custom evaluation frameworks, model optimization, and scalable AI infrastructure. I'm particularly interested in solving complex problems where reliable AI performance matters in real-world conditions.
 
-Previously, I built LLM-driven platforms for hiring and chatbots for real estate sector at Hashkraft, developed face recognition systems at scale with Coriolis Technologies, and contributed to scientific ML research at institutes like CERN, DESY, and IISER Pune. I’ve worked across diverse domains—computer vision, NLP, anomaly detection, and particle physics—always focusing on applying AI in meaningful, interpretable, and responsible ways.
+Alongside my work at Storefox, I conduct technical AI safety research. I've contributed to open-source agent security tools, developed model organisms exhibiting shutdown-resistant behavior, investigated emergent misalignment, and studied the faithfulness of chain-of-thought reasoning in multimodal LLMs.
 
-I'm also passionate about AI safety and alignment, having participated in the Whitebox Research AI Safety Fellowship, where I explored concepts in interpretability and worked on evaluating the unfaithfulness of chain-of-thought reasoning in LLMs.
+My research interests lie at the intersection of AI control, agent security, evaluations, monitorability, and understanding potentially dangerous AI behaviors.
 
-My tech stack includes tools like Python, PyTorch, FastAPI, Docker, Kubernetes, and AWS, along with modern AI-focused platforms such as Portkey, Instructor, Claude, and ChatGPT. Whether it’s deploying deep learning models at scale, building RAG pipelines with vector DBs, or improving system reliability with tools like Ansible and Kafka, I enjoy working across the full stack to turn research into impact.
+Before working on modern AI systems, I studied Data Science at IISER Pune and conducted scientific computing and machine learning research involving CERN, DESY, and the University of Glasgow.
 
-Let's connect and collaborate!
+I enjoy building things, designing rigorous experiments, understanding why systems fail, and explaining complex technical ideas.
   `,
   avatar: "https://ishita-codes-ai.in/images/ishita-avatar-ghibli.jpg",
   avatarWebp: "/images/ishita-avatar-ghibli.webp",
   ogImage: "/opengraph-image",
-  keywords:
-    "ishita, ishita pal, AI, AI safety, AI alignment, AI research, Founding Engineer, AI lead",
   dateCreated: "2025-07-05", // YYYY-MM-DD
 };

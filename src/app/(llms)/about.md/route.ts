@@ -1,6 +1,6 @@
 import { USER } from "@/data/user";
+import { EXPERTISE_GROUPS } from "@/features/profile/data/expertise";
 import { SOCIAL_LINKS } from "@/features/profile/data/social-links";
-import { TECH_STACK } from "@/features/profile/data/tech-stack";
 import { decodeEmail, decodePhoneNumber } from "@/utils/string";
 
 const content = `# About
@@ -21,9 +21,9 @@ ${USER.about.trim()}
 
 ${SOCIAL_LINKS.map((item) => `- [${item.title}](${item.href})`).join("\n")}
 
-## Tech Stack
+## Expertise
 
-${TECH_STACK.map((item) => `- [${item.title}](${item.href})`).join("\n")}\n`;
+${EXPERTISE_GROUPS.map((group) => `### ${group.title}\n\n${group.skills.join(", ")}`).join("\n\n")}\n`;
 
 export const dynamic = "force-static";
 

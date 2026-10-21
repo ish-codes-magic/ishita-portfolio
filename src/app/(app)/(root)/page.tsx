@@ -10,6 +10,7 @@ import { PortfolioExperience } from "@/features/profile/components/portfolio/exp
 import { PortfolioHero } from "@/features/profile/components/portfolio/hero";
 import { PortfolioProjects } from "@/features/profile/components/portfolio/projects";
 import { PortfolioResearch } from "@/features/profile/components/portfolio/research";
+import { PortfolioWriting } from "@/features/profile/components/portfolio/writing";
 import { SOCIAL_LINKS } from "@/features/profile/data/social-links";
 
 export default function Page() {
@@ -29,6 +30,7 @@ export default function Page() {
           <PortfolioExperience />
           <PortfolioResearch />
           <PortfolioProjects />
+          <PortfolioWriting />
           <PortfolioCredentials />
         </div>
         <PortfolioContact />
@@ -52,6 +54,12 @@ function getPageJsonLd(): WithContext<PageSchema> {
       jobTitle: USER.jobTitle,
       description: USER.bio,
       sameAs: SOCIAL_LINKS.map((link) => link.href),
+      knowsAbout: USER.researchInterests,
+      worksFor: {
+        "@type": "Organization",
+        name: USER.jobs[0].company,
+        url: USER.jobs[0].website,
+      },
     },
   };
 }
