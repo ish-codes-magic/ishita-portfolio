@@ -1,13 +1,12 @@
 {
-  "name": "chanhdai.com",
+  "name": "ishita-portfolio",
   "version": "0.1.0",
-  "description": "chanhdai.com is my portfolio website, showcasing my work and experience as a Software Developer & UI/UX Designer.",
-  "homepage": "https://chanhdai.com",
+  "description": "Ishita Pal's portfolio: AI engineering, AI safety, and machine learning research.",
+  "homepage": "https://ishita-codes-ai.in",
   "license": "MIT",
   "author": {
-    "name": "Nguyen Chanh Dai",
-    "email": "dai@chanhdai.com",
-    "url": "https://github.com/ncdai"
+    "name": "Ishita Pal",
+    "url": "https://github.com/ish-codes-magic"
   },
   "contributors": [
     {
@@ -18,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ncdai/chanhdai.com.git"
+    "url": "git+https://github.com/ish-codes-magic/ishita-portfolio.git"
   },
   "scripts": {
     "dev": "next dev -p 1408 --turbopack",

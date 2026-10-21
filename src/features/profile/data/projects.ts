@@ -3,20 +3,20 @@ import type { Project } from "../types/projects";
 export const PROJECTS: Project[] = [
   {
     id: "gpt-art-critique",
-    title: "Art Critique GPT – AI-Powered Artwork Analysis Tool",
+    title: "Art Critique GPT",
     period: {
       start: "2024", // You can update this with the actual period
     },
     link: "https://github.com/ish-codes-magic/GPT_art_critique",
     skills: [
-      "Machine Learning",
-      "Content-Based Filtering",
-      "Data Analysis",
+      "GPT-4 Vision",
+      "Instructor",
+      "Pydantic",
       "Python",
-      "Kaggle Dataset",
-      "Algorithm Development",
-      "Netflix API",
-      "Recommendation Engine",
+      "Streamlit",
+      "Prompt Engineering",
+      "Jinja2",
+      "Multimodal AI",
     ],
     description: `Built an art analysis application using GPT-4 Vision API to generate comprehensive critiques of artwork across various media types.
 - Designed a structured analysis pipeline using OpenAI’s GPT-4 Vision, integrated through the OpenAI API for generating image-based art critiques.
@@ -33,7 +33,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "2024", // You can update this with the actual period
     },
-    link: "https://github.com/ish-codes-magic/Art_Critique_GPT",
+    link: "https://github.com/ish-codes-magic/Netflix_recommendation_system",
     skills: [
       "Machine Learning",
       "Content-Based Filtering",
@@ -54,19 +54,19 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "transformer-model-implementation-from-scratch",
-    title: "Transformer Model Implementation From Scratch",
+    title: "Transformer from Scratch",
     period: {
       start: "2024", // You can update this with the actual period
     },
     link: "https://github.com/ish-codes-magic/transformer_from_scratch", // Add GitHub link here when available
     skills: [
-      "Python",
       "PyTorch",
-      "Computer Vision",
+      "Transformers",
+      "Attention Mechanisms",
+      "Python",
       "Deep Learning",
-      "Image Classification",
-      "Convolutional Neural Networks",
-      "Transfer Learning",
+      "Machine Translation",
+      "Hugging Face Tokenizers",
       "Model Training",
       "Model Evaluation",
     ],
@@ -81,22 +81,18 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "data-analysis-for-telangana-government",
-    title:
-      "Data Analysis for Telangana Government (in collaboration with Codebasics)",
+    title: "Telangana Public Data Analysis",
     period: {
       start: "2024", // You can update this with the actual period
     },
     link: "https://github.com/ish-codes-magic/telangana-project", // Add GitHub link here when available
     skills: [
       "Python",
-      "PyTorch",
-      "Computer Vision",
-      "Deep Learning",
-      "Image Classification",
-      "Convolutional Neural Networks",
-      "Transfer Learning",
-      "Model Training",
-      "Model Evaluation",
+      "Data Analysis",
+      "Data Storytelling",
+      "Public Datasets",
+      "Trend Analysis",
+      "Geospatial Insights",
     ],
     description: `Worked on a real-world data analysis project for a competition organised by Telangana Government in collaboration with Codebasics to extract actionable insights from public datasets.
 - Performed in-depth analysis across multiple domains including document registration (e-Stamps), transportation, industrial investments (TS-iPASS), and government schemes.
@@ -109,7 +105,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "alexnet-implementation-from-scratch",
-    title: "AlexNet Implementation From Scratch",
+    title: "AlexNet from Scratch",
     period: {
       start: "2024", // You can update this with the actual period
     },
@@ -135,7 +131,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "vggnet-implementation-from-scratch",
-    title: "VGGNet Implementation From Scratch",
+    title: "VGGNet from Scratch",
     period: {
       start: "2024", // You can update this with the actual period
     },
@@ -165,7 +161,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "2024", // You can update this with the actual period
     },
-    link: "", // Add GitHub link here when available
+    link: "https://github.com/ish-codes-magic/airflow-spotify-etl",
     skills: [
       "Data Engineering",
       "Apache Airflow",

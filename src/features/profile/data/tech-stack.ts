@@ -22,7 +22,7 @@ export const TECH_STACK: TechStack[] = [
   {
     key: "github",
     title: "GitHub",
-    href: "https://git-scm.com/",
+    href: "https://github.com/",
     categories: ["Version Control"],
   },
   {

@@ -1,6 +1,7 @@
 import dayjs from "dayjs";
 import type { ProfilePage as PageSchema, WithContext } from "schema-dts";
 
+import { SITE_INFO } from "@/config/site";
 import { USER } from "@/data/user";
 import { PortfolioAbout } from "@/features/profile/components/portfolio/about";
 import { PortfolioContact } from "@/features/profile/components/portfolio/contact";
@@ -9,6 +10,7 @@ import { PortfolioExperience } from "@/features/profile/components/portfolio/exp
 import { PortfolioHero } from "@/features/profile/components/portfolio/hero";
 import { PortfolioProjects } from "@/features/profile/components/portfolio/projects";
 import { PortfolioResearch } from "@/features/profile/components/portfolio/research";
+import { SOCIAL_LINKS } from "@/features/profile/data/social-links";
 
 export default function Page() {
   return (
@@ -45,7 +47,11 @@ function getPageJsonLd(): WithContext<PageSchema> {
       "@type": "Person",
       name: USER.displayName,
       identifier: USER.username,
-      image: USER.avatar,
+      image: new URL(USER.avatar, SITE_INFO.url).toString(),
+      url: SITE_INFO.url,
+      jobTitle: USER.jobTitle,
+      description: USER.bio,
+      sameAs: SOCIAL_LINKS.map((link) => link.href),
     },
   };
 }

@@ -1,7 +1,7 @@
 export const USER = {
   firstName: "Ishita",
   lastName: "Pal",
-  displayName: "Ishita",
+  displayName: "Ishita Pal",
   username: "butterfly-ish",
   gender: "woman",
   bio: "Driven to make AI safe, reliable, and accessible to all.",
@@ -69,11 +69,9 @@ My tech stack includes tools like Python, PyTorch, FastAPI, Docker, Kubernetes, 
 
 Let's connect and collaborate!
   `,
-  avatar: "https://assets.ishita-codes-ai.in/images/ishita-avatar-ghibli.jpg",
-  avatarWebp:
-    "https://assets.ishita-codes-ai.in/images/ishita-avatar-ghibli.webp",
-  ogImage:
-    "https://assets.ishita-codes-ai.in/images/screenshot-og-image-dark.png",
+  avatar: "https://ishita-codes-ai.in/images/ishita-avatar-ghibli.jpg",
+  avatarWebp: "/images/ishita-avatar-ghibli.webp",
+  ogImage: "/opengraph-image",
   keywords:
     "ishita, ishita pal, AI, AI safety, AI alignment, AI research, Founding Engineer, AI lead",
   dateCreated: "2025-07-05", // YYYY-MM-DD
