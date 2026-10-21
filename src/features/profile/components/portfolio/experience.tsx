@@ -48,7 +48,7 @@ function ExperienceCard({ experience }: { experience: Experience }) {
               .join(" · ")}
           </p>
           <p className="mt-5 text-sm leading-7 text-muted-foreground">
-            {getSummary(position.description)}
+            {position.summary ?? getSummary(position.description)}
           </p>
           {position.skills && (
             <div className="mt-5">
@@ -77,7 +77,7 @@ export function PortfolioExperience() {
       id="experience"
       eyebrow="02 / The work so far"
       title="Building things that make a difference."
-      description="From leading AI products to exploring machine learning in scientific research."
+      description="Professional experience building production AI systems, alongside earlier scientific computing and machine learning research."
     >
       <div className="space-y-4">
         {EXPERIENCES.slice(0, 3).map((experience) => (

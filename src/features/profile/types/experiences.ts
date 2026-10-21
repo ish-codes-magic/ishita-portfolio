@@ -14,6 +14,7 @@ export type ExperiencePosition = {
   };
   location?: string;
   employmentType?: string;
+  summary?: string;
   description?: string;
   icon?: ExperiencePositionIcon;
   skills?: string[];
