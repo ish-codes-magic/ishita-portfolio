@@ -22,7 +22,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-5 py-3 sm:min-h-20 sm:flex-nowrap sm:py-0">
         <Link
           href="/"
-          aria-label={`${USER.firstName} ${USER.lastName} — home`}
+          aria-label={`ip. ${USER.firstName} ${USER.lastName} — home`}
           className="flex min-h-11 items-center gap-3 rounded-sm"
         >
           <span
