@@ -14,6 +14,12 @@ export const SOCIAL_LINKS: SocialLink[] = [
     href: "https://github.com/ish-codes-magic",
   },
   {
+    icon: "/images/link-icons/substack.svg",
+    title: "Substack",
+    description: "@ishitacodesai",
+    href: "https://substack.com/@ishitacodesai",
+  },
+  {
     icon: "https://assets.ishita-codes-ai.in/images/link-icons/leetcode.png",
     title: "LeetCode",
     description: "ishita_in_data",

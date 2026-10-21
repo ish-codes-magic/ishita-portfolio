@@ -13,7 +13,7 @@ const content = `# ${USER.displayName}
 - [Writing & Talks](${SITE_INFO.url}/writing.md): Black Hat SecTor Arsenal presentation, Whitebox research writing, and related USENIX research presented by Preeti Ravindra.
 - [Recognition](${SITE_INFO.url}/awards.md): Black Hat Arsenal, KVPY, Whitebox, DESY, and earlier academic distinctions.
 - [Training & Certifications](${SITE_INFO.url}/certifications.md): BlueDot Technical AI Safety and foundational machine learning training.
-- [Contact](${SITE_INFO.url}/#contact): Email, LinkedIn, and GitHub.
+- [Contact](${SITE_INFO.url}/#contact): Email, LinkedIn, GitHub, and Substack.
 
 `;
 
