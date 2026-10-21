@@ -1,92 +1,77 @@
-# Development
+# Development & deployment
 
-This guide provides instructions on how to set up and run the project locally.
+## Local development
 
-## Prerequisites
-
-Ensure you have the following installed:
-
-- [Node.js](https://nodejs.org/) (Latest LTS version recommended)
-- [pnpm](https://pnpm.io/)
-- [Git](https://git-scm.com/)
-
-## Setup
-
-### 1. Clone the repository
+Use Node.js 22 and pnpm 10.10.0 (the version specified in `package.json`).
 
 ```bash
-git clone https://github.com/ncdai/chanhdai.com.git minimal-portfolio
-cd minimal-portfolio
-```
-
-### 2. Install dependencies
-
-```bash
-pnpm i
-```
-
-### 3. Configure Environment Variables
-
-Create a `.env.local` file based on `.env.example`:
-
-```bash
-cp .env.example .env.local
-```
-
-Then, update the necessary environment variables inside `.env.local`.
-
-### 4. Run the development server
-
-```bash
+git clone https://github.com/ish-codes-magic/ishita-portfolio.git
+cd ishita-portfolio
+pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-The application should now be available at http://localhost:1408
+The development server runs at [http://localhost:1408](http://localhost:1408).
 
-## Building for Production
+No environment variables are required for the portfolio. To override the canonical site URL locally, set `APP_URL` in an untracked `.env.local` file. The default is `https://ishita-codes-ai.in`.
+
+## Checks and production build
 
 ```bash
+pnpm lint
+pnpm check-types
 pnpm build
+pnpm start
 ```
 
-After building, start the application with:
+Stop the development server before running the production build; both use the `.next` directory. `pnpm start` serves the production build on port 3000.
+
+## One-time Vercel setup
+
+1. Create or select the Vercel project for this repository. Use the Next.js framework preset, repository root directory, and Node.js 22.x.
+2. Add the production domain `ishita-codes-ai.in` to that project. If using another domain, set `APP_URL` in Vercel’s **Production** environment and update `USER.website` in `src/data/user.ts`.
+3. Get the project’s **Project ID** and the account/team **ID** from Vercel settings. Alternatively, run `pnpm dlx vercel@65.0.0 link` locally; `.vercel/project.json` contains `projectId` and `orgId`. The `.vercel` directory is gitignored.
+4. Create a Vercel access token at [vercel.com/account/tokens](https://vercel.com/account/tokens), scoped to the account/team containing the project.
+5. In GitHub, open **Settings → Secrets and variables → Actions** and add these repository secrets:
+
+   | Secret              | Value                     |
+   | ------------------- | ------------------------- |
+   | `VERCEL_TOKEN`      | Vercel access token       |
+   | `VERCEL_ORG_ID`     | Account/team ID (`orgId`) |
+   | `VERCEL_PROJECT_ID` | Project ID (`projectId`)  |
+
+The workflow uses the `production` GitHub environment. No manual approval is required unless you configure environment protection rules yourself.
+
+`vercel.json` disables Vercel’s automatic Git deployments for all branches. This makes the version-tag workflow the deployment trigger, including when the repository remains connected through Vercel’s GitHub integration. Deploy hooks or other external automation, if configured separately, should also be disabled if all deployments must be tag-controlled.
+
+## Release to production
+
+First push the intended commits to `main`, then create a **new** version tag:
 
 ```bash
-NODE_ENV=production pnpm start
+git switch main
+git pull --ff-only origin main
+git push origin main
+git tag -a v1.0.0 -m "Release v1.0.0"
+git push origin v1.0.0
 ```
 
-## Registry
+For the next release, use `v1.0.1` (or the next appropriate version). Do not move or reuse an existing release tag.
 
-This project utilizes **shadcn Registry**, which allows you to manage and distribute custom components, hooks, pages, and other files across multiple React projects. By hosting a registry, you can reuse UI components easily without manually copying code between projects.
+The workflow at `.github/workflows/deploy-vercel.yml`:
 
-### Using Registry in other React projects
+1. Runs only on pushed tags matching `v*.*.*`; branch pushes and pull requests do not trigger deployment.
+2. Requires the exact `vMAJOR.MINOR.PATCH` format and checks that the tagged commit is on `main`.
+3. Installs locked dependencies, runs lint, and checks TypeScript.
+4. Pulls the Vercel production settings and environment variables.
+5. Builds production artifacts with `vercel build --prod`.
+6. Deploys those artifacts with `vercel deploy --prebuilt --prod`, avoiding a second build on Vercel.
+7. Records the deployment URL in the Actions summary and the GitHub `production` environment.
 
-If you're working on a different React project and want to reuse the custom components from this repository, you can add them using the **shadcn CLI** with the following commands:
+Check the **Actions** tab for progress. Production deploys are serialized, and a running deploy is not cancelled by a newer tag. GitHub may replace an older pending run when several tags are pushed in quick succession, so release one tag at a time.
 
-```bash
-npx shadcn@latest add https://chanhdai.com/r/utils.json
-npx shadcn@latest add https://chanhdai.com/r/theme-switcher.json
-npx shadcn@latest add https://chanhdai.com/r/flip-sentences.json
-npx shadcn@latest add https://chanhdai.com/r/apple-hello-effect.json
-npx shadcn@latest add https://chanhdai.com/r/wheel-picker.json
-npx shadcn@latest add https://chanhdai.com/r/use-controllable-state.json
-```
+To retry a transient failure, rerun the failed workflow from the Actions tab. To roll back, use Vercel’s deployment dashboard to promote a previously working production deployment.
 
-> Note: These components are compatible with [Tailwind CSS v4](https://tailwindcss.com/blog/tailwindcss-v4) and [React 19](https://react.dev/blog/2024/12/05/react-19).
+## Optional component registry
 
-### Registry configuration
-
-Documentation: [shadcn Registry Docs](https://ui.shadcn.com/docs/registry)
-
-Source files:
-
-- `./src/registry`
-
-Before using the registry, run the following command to build and generate the registry JSON files:
-
-```bash
-pnpm registry:internal:build
-pnpm registry:build
-```
-
-When running the `npx shadcn@latest add <registry-url>` command, the selected component will be automatically downloaded and integrated into your project.
+The original template’s shadcn registry tooling is available under `src/registry/` and through the `registry:internal:build` and `registry:build` scripts. It is independent of the portfolio release workflow.
