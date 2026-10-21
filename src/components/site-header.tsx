@@ -1,58 +1,67 @@
-import dynamic from "next/dynamic";
 import Link from "next/link";
 
-import { DesktopNav } from "@/components/desktop-nav";
-import { MobileNav } from "@/components/mobile-nav";
-import { NavItemGitHub } from "@/components/nav-item-github";
 import { ToggleTheme } from "@/components/toggle-theme";
-import { MAIN_NAV } from "@/config/site";
-import { getAllPosts } from "@/data/blog";
-import { cn } from "@/lib/utils";
+import { USER } from "@/data/user";
 
-import { SiteHeaderMark } from "./site-header-mark";
-import { SiteHeaderWrapper } from "./site-header-wrapper";
-
-const BrandContextMenu = dynamic(() =>
-  import("@/components/brand-context-menu").then((mod) => mod.BrandContextMenu)
-);
-
-const CommandMenu = dynamic(() =>
-  import("@/components/command-menu").then((mod) => mod.CommandMenu)
-);
+const LINKS = [
+  { title: "About", href: "/#about" },
+  { title: "Experience", href: "/#experience" },
+  { title: "Research", href: "/#research" },
+  { title: "Projects", href: "/#projects" },
+];
 
 export function SiteHeader() {
-  const posts = getAllPosts();
-
   return (
-    <SiteHeaderWrapper
-      className={cn(
-        "sticky inset-0 top-0 z-50 max-w-screen overflow-x-hidden bg-background px-2 pt-2",
-        "data-[affix=true]:shadow-[0_0_16px_0_black]/8 dark:data-[affix=true]:shadow-[0_0_16px_0_black]/80",
-        "not-dark:data-[affix=true]:**:data-header-container:after:bg-border",
-        "transition-shadow duration-300"
-      )}
-    >
-      <div
-        className="screen-line-before screen-line-after mx-auto flex h-12 items-center justify-between gap-2 border-x border-edge px-2 after:z-1 after:transition-[background-color] sm:gap-4 md:max-w-3xl"
-        data-header-container
+    <header className="sticky top-0 z-50 border-b border-border bg-background/95 px-5 backdrop-blur-md sm:px-8">
+      <a
+        href="#main-content"
+        className="fixed top-3 left-3 z-50 -translate-y-24 rounded-lg bg-primary px-4 py-3 text-primary-foreground focus:translate-y-0"
       >
-        <BrandContextMenu>
-          <Link href="/" aria-label="Home" className="[&_svg]:h-8">
-            <SiteHeaderMark />
+        Skip to content
+      </a>
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-5 py-3 sm:min-h-20 sm:flex-nowrap sm:py-0">
+        <Link
+          href="/"
+          aria-label={`${USER.firstName} ${USER.lastName} — home`}
+          className="flex min-h-11 items-center gap-3 rounded-sm"
+        >
+          <span
+            aria-hidden="true"
+            className="flex size-9 items-center justify-center rounded-xl bg-primary font-mono text-sm font-medium text-primary-foreground"
+          >
+            ip.
+          </span>
+          <span className="text-sm font-medium tracking-tight sm:text-base">
+            {USER.firstName} {USER.lastName}
+          </span>
+        </Link>
+        <nav
+          aria-label="Main navigation"
+          className="order-3 flex w-full items-center justify-between gap-2 border-t border-border pt-2 sm:order-0 sm:w-auto sm:justify-center sm:gap-6 sm:border-0 sm:pt-0 lg:gap-8"
+        >
+          {LINKS.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="inline-flex min-h-10 items-center rounded-sm text-xs text-muted-foreground transition-colors hover:text-primary sm:text-sm"
+            >
+              {link.title}
+            </Link>
+          ))}
+        </nav>
+        <div className="flex items-center gap-2 sm:gap-4">
+          <Link
+            href="/#contact"
+            className="hidden min-h-10 items-center rounded-sm text-sm font-medium text-primary sm:inline-flex"
+          >
+            Let’s talk{" "}
+            <span aria-hidden="true" className="ml-1.5">
+              ↗
+            </span>
           </Link>
-        </BrandContextMenu>
-
-        <div className="flex-1" />
-
-        <DesktopNav items={MAIN_NAV} />
-
-        <div className="flex items-center gap-2">
-          <CommandMenu posts={posts} />
-          <NavItemGitHub />
           <ToggleTheme />
-          <MobileNav className="sm:hidden" items={MAIN_NAV} />
         </div>
       </div>
-    </SiteHeaderWrapper>
+    </header>
   );
 }

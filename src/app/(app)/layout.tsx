@@ -11,7 +11,9 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <SiteHeader />
-      <main className="max-w-screen overflow-x-hidden px-2">{children}</main>
+      <main id="main-content" tabIndex={-1} className="px-5 sm:px-8">
+        {children}
+      </main>
       <SiteFooter />
       <ScrollTop />
     </>

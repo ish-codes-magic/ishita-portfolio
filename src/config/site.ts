@@ -10,8 +10,8 @@ export const SITE_INFO = {
 };
 
 export const META_THEME_COLORS = {
-  light: "#ffffff",
-  dark: "#09090b",
+  light: "#fafbf7",
+  dark: "#141d19",
 };
 
 export const MAIN_NAV: NavItem[] = [
