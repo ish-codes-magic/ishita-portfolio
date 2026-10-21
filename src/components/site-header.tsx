@@ -20,19 +20,12 @@ export function SiteHeader() {
         Skip to content
       </a>
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-5 py-3 sm:min-h-20 sm:flex-nowrap sm:py-0">
-        <Link
-          href="/"
-          aria-label={`ip. ${USER.firstName} ${USER.lastName} — home`}
-          className="flex min-h-11 items-center gap-3 rounded-sm"
-        >
-          <span
-            aria-hidden="true"
-            className="flex size-9 items-center justify-center rounded-xl bg-primary font-mono text-sm font-medium text-primary-foreground"
-          >
+        <Link href="/" className="flex min-h-11 items-center gap-3 rounded-sm">
+          <span className="flex size-9 items-center justify-center rounded-xl bg-primary font-mono text-sm font-medium text-primary-foreground">
             ip.
           </span>
           <span className="text-sm font-medium tracking-tight sm:text-base">
-            {USER.firstName} {USER.lastName}
+            {USER.displayName}
           </span>
         </Link>
         <nav
