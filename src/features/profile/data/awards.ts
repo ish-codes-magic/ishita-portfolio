@@ -13,6 +13,7 @@ export const AWARDS: Award[] = [
   },
   {
     id: "kvpy-2018",
+    isAcademicDistinction: true,
     prize: "KVPY Scholar",
     title: "Kishore Vaigyanik Protsahan Yojana",
     date: "2018",
